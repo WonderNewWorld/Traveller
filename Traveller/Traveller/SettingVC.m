@@ -26,7 +26,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.view.backgroundColor = [UIColor yellowColor];
+	
+    UILabel *lbl=[[UILabel alloc]initWithFrame:CGRectMake(20, 30, 280, 30)];
+    lbl.backgroundColor=[UIColor grayColor];
+    lbl.text=@"haha";
+    [self.view addSubview:lbl];
 }
 
 - (void)didReceiveMemoryWarning
