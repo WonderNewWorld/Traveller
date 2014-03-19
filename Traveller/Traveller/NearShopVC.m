@@ -35,6 +35,8 @@
     //地图
     self.mapView=[[MAMapView alloc] initWithFrame:CGRectMake(0, 60, 320, self.view.bounds.size.height-104)];
     self.mapView.delegate = self;
+    self.mapView.showTraffic = YES;
+    self.mapView.showsUserLocation = YES;
     [self.view addSubview:self.mapView];
 }
 
