@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MainViewController : UIViewController
-
+@property(nonatomic,strong)UIView *hot_Spot_view;
+@property(nonatomic,strong)UIView *hot_post_view;
+@property(nonatomic,strong)UIView *Function_view;
 @end

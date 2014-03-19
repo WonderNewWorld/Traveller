@@ -26,9 +26,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self readyhotspot];
+    [self readhotpost];
+    [self readyFunction];
+    [self.view addSubview:self.Function_view];
+    [self.view addSubview:self.hot_post_view];
+    [self.view addSubview:self.hot_Spot_view];
     self.title=@"热门推荐";
+    
+}
+-(void)readyhotspot{
+    self.hot_Spot_view=[[UIView alloc] initWithFrame:CGRectMake(0, 80, self.view.frame.size.width, 150)];
+    self.hot_Spot_view.backgroundColor=[UIColor redColor];
 }
 
+-(void)readhotpost{
+    self.hot_post_view=[[UIView alloc]initWithFrame:CGRectMake(0, 240, self.view.frame.size.width, 150)];
+    self.hot_post_view.backgroundColor=[UIColor blueColor];
+}
+
+-(void)readyFunction{
+    self.Function_view=[[UIView alloc]initWithFrame:CGRectMake(0, 400, self.view.frame.size.width, 200)];
+    self.Function_view.backgroundColor=[UIColor grayColor];
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
