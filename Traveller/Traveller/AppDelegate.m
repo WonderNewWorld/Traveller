@@ -16,11 +16,17 @@
     
     self.tab = [[UITabBarController alloc] init];
     
+    MainViewController *main=[[MainViewController alloc] init];
+    [self.tab addChildViewController:main];
+    
+    
     NearShopVC *near = [[NearShopVC alloc] init];
     [self.tab addChildViewController:near];
     
     SettingVC *setting = [[SettingVC alloc] init];
     [self.tab addChildViewController:setting];
+    
+
     
     self.window.rootViewController = self.tab;
     self.window.backgroundColor = [UIColor whiteColor];
