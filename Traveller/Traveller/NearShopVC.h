@@ -13,4 +13,7 @@
 
 @property (strong,nonatomic)UISearchBar *searchBar;
 @property (strong,nonatomic)MAMapView *mapView;
+@property (strong,nonatomic)UITableView *listView;
+@property (strong,nonatomic)UISegmentedControl *segmentType;
+
 @end
