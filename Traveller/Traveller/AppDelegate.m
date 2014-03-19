@@ -13,8 +13,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    self.tab = [[UITabBarController alloc] init];
+    NearShopVC *near = [[NearShopVC alloc] init];
+    
+    [self.tab addChildViewController:near];
+    self.window.rootViewController = self.tab;
     self.window.backgroundColor = [UIColor whiteColor];
+
     [self.window makeKeyAndVisible];
     return YES;
 }

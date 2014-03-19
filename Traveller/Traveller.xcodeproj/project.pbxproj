@@ -19,6 +19,7 @@
 		10FD4A7018D9333700FBD4B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4A5818D9333600FBD4B4 /* UIKit.framework */; };
 		10FD4A7818D9333700FBD4B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10FD4A7618D9333700FBD4B4 /* InfoPlist.strings */; };
 		10FD4A7A18D9333700FBD4B4 /* TravellerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FD4A7918D9333700FBD4B4 /* TravellerTests.m */; };
+		10FD4A8618D9668800FBD4B4 /* NearShopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FD4A8518D9668800FBD4B4 /* NearShopVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		10FD4A7518D9333700FBD4B4 /* TravellerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TravellerTests-Info.plist"; sourceTree = "<group>"; };
 		10FD4A7718D9333700FBD4B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		10FD4A7918D9333700FBD4B4 /* TravellerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravellerTests.m; sourceTree = "<group>"; };
+		10FD4A8418D9668800FBD4B4 /* NearShopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearShopVC.h; sourceTree = "<group>"; };
+		10FD4A8518D9668800FBD4B4 /* NearShopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearShopVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 		10FD4A5A18D9333600FBD4B4 /* Traveller */ = {
 			isa = PBXGroup;
 			children = (
+				10FD4A8318D9666000FBD4B4 /* NearShop */,
 				10FD4A6318D9333600FBD4B4 /* AppDelegate.h */,
 				10FD4A6418D9333600FBD4B4 /* AppDelegate.m */,
 				10FD4A6618D9333600FBD4B4 /* Images.xcassets */,
@@ -142,6 +146,15 @@
 				10FD4A7618D9333700FBD4B4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10FD4A8318D9666000FBD4B4 /* NearShop */ = {
+			isa = PBXGroup;
+			children = (
+				10FD4A8418D9668800FBD4B4 /* NearShopVC.h */,
+				10FD4A8518D9668800FBD4B4 /* NearShopVC.m */,
+			);
+			name = NearShop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10FD4A8618D9668800FBD4B4 /* NearShopVC.m in Sources */,
 				10FD4A6518D9333600FBD4B4 /* AppDelegate.m in Sources */,
 				10FD4A6118D9333600FBD4B4 /* main.m in Sources */,
 			);
