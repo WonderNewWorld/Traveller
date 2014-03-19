@@ -28,6 +28,7 @@
     [super viewDidLoad];
 	self.view.backgroundColor = [UIColor redColor];
     self.title = @"附近";
+    NSLog(@"test branch");
 }
 
 - (void)didReceiveMemoryWarning
