@@ -26,11 +26,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-    UILabel *lbl=[[UILabel alloc]initWithFrame:CGRectMake(20, 30, 280, 30)];
-    lbl.backgroundColor=[UIColor grayColor];
-    lbl.text=@"haha";
-    [self.view addSubview:lbl];
+	self.AccountLbl.text=@"123";
+    self.AccountLbl.userInteractionEnabled=YES;
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onClickUILable)];
+    [self.AccountLbl addGestureRecognizer:tapGesture];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,5 +38,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)onClickUILable{
 
+    NSLog(@"123");
+}
 @end

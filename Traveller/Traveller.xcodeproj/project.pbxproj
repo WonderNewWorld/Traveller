@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		101DA76618D96779007A33DA /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 101DA76518D96779007A33DA /* SettingVC.m */; };
+		101DA76B18D97707007A33DA /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 101DA76A18D97707007A33DA /* SettingVC.xib */; };
 		109D050B18D96B0600F67F0C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 109D050918D96B0600F67F0C /* MainViewController.m */; };
 		109D050C18D96B0600F67F0C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 109D050A18D96B0600F67F0C /* MainViewController.xib */; };
 		10FD4A5518D9333600FBD4B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4A5418D9333600FBD4B4 /* Foundation.framework */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		101DA76418D96779007A33DA /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
 		101DA76518D96779007A33DA /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		101DA76A18D97707007A33DA /* SettingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
 		109D050818D96B0600F67F0C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		109D050918D96B0600F67F0C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		109D050A18D96B0600F67F0C /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				101DA76418D96779007A33DA /* SettingVC.h */,
 				101DA76518D96779007A33DA /* SettingVC.m */,
+				101DA76A18D97707007A33DA /* SettingVC.xib */,
 			);
 			name = SettingViewControllers;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10FD4A5F18D9333600FBD4B4 /* InfoPlist.strings in Resources */,
+				101DA76B18D97707007A33DA /* SettingVC.xib in Resources */,
 				109D050C18D96B0600F67F0C /* MainViewController.xib in Resources */,
 				10FD4AE818D9768200FBD4B4 /* AMap.bundle in Resources */,
 				10FD4A6718D9333600FBD4B4 /* Images.xcassets in Resources */,

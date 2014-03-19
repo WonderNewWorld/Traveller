@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingVC : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *AccountLbl;
+@property (strong, nonatomic) IBOutlet UILabel *ShareLbl;
+@property (strong, nonatomic) IBOutlet UILabel *FeedbackLbl;
+@property (strong, nonatomic) IBOutlet UILabel *ClearImgCache ;
 
 @end
