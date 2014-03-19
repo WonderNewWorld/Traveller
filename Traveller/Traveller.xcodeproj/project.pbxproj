@@ -104,6 +104,13 @@
 			name = MainviewControllers;
 			sourceTree = "<group>";
 		};
+		10F5468B18D96BD800EBE52B /* PostsViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PostsViewControllers;
+			sourceTree = "<group>";
+		};
 		10FD4A4818D9333600FBD4B4 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +144,7 @@
 		10FD4A5A18D9333600FBD4B4 /* Traveller */ = {
 			isa = PBXGroup;
 			children = (
+				10F5468B18D96BD800EBE52B /* PostsViewControllers */,
 				109D050718D96AEC00F67F0C /* MainviewControllers */,
 				101DA76718D9677D007A33DA /* SettingViewControllers */,
 				10FD4A8318D9666000FBD4B4 /* NearShopViewControllers */,
