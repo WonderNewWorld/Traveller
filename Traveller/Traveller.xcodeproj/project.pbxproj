@@ -23,6 +23,15 @@
 		10FD4A7818D9333700FBD4B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10FD4A7618D9333700FBD4B4 /* InfoPlist.strings */; };
 		10FD4A7A18D9333700FBD4B4 /* TravellerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FD4A7918D9333700FBD4B4 /* TravellerTests.m */; };
 		10FD4A8618D9668800FBD4B4 /* NearShopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FD4A8518D9668800FBD4B4 /* NearShopVC.m */; };
+		10FD4AD818D9761F00FBD4B4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4AD718D9761F00FBD4B4 /* QuartzCore.framework */; };
+		10FD4ADA18D9762A00FBD4B4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4AD918D9762A00FBD4B4 /* CoreLocation.framework */; };
+		10FD4ADC18D9763100FBD4B4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4ADB18D9763100FBD4B4 /* SystemConfiguration.framework */; };
+		10FD4ADE18D9763800FBD4B4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4ADD18D9763800FBD4B4 /* CoreTelephony.framework */; };
+		10FD4AE018D9763E00FBD4B4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4ADF18D9763E00FBD4B4 /* libz.dylib */; };
+		10FD4AE218D9764700FBD4B4 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4AE118D9764700FBD4B4 /* libstdc++.6.0.9.dylib */; };
+		10FD4AE418D9764C00FBD4B4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4AE318D9764C00FBD4B4 /* Security.framework */; };
+		10FD4AE618D9766800FBD4B4 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4AE518D9766800FBD4B4 /* MAMapKit.framework */; };
+		10FD4AE818D9768200FBD4B4 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 10FD4AE718D9768200FBD4B4 /* AMap.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +68,15 @@
 		10FD4A7918D9333700FBD4B4 /* TravellerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravellerTests.m; sourceTree = "<group>"; };
 		10FD4A8418D9668800FBD4B4 /* NearShopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearShopVC.h; sourceTree = "<group>"; };
 		10FD4A8518D9668800FBD4B4 /* NearShopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearShopVC.m; sourceTree = "<group>"; };
+		10FD4AD718D9761F00FBD4B4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		10FD4AD918D9762A00FBD4B4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		10FD4ADB18D9763100FBD4B4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		10FD4ADD18D9763800FBD4B4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		10FD4ADF18D9763E00FBD4B4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		10FD4AE118D9764700FBD4B4 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		10FD4AE318D9764C00FBD4B4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		10FD4AE518D9766800FBD4B4 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../../Amap/AMap_iOS_API_Lib_V2.2.0/2D/MAMapKit.framework; sourceTree = "<group>"; };
+		10FD4AE718D9768200FBD4B4 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +84,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10FD4AE618D9766800FBD4B4 /* MAMapKit.framework in Frameworks */,
+				10FD4AE418D9764C00FBD4B4 /* Security.framework in Frameworks */,
+				10FD4AE218D9764700FBD4B4 /* libstdc++.6.0.9.dylib in Frameworks */,
+				10FD4AE018D9763E00FBD4B4 /* libz.dylib in Frameworks */,
+				10FD4ADE18D9763800FBD4B4 /* CoreTelephony.framework in Frameworks */,
+				10FD4ADC18D9763100FBD4B4 /* SystemConfiguration.framework in Frameworks */,
+				10FD4ADA18D9762A00FBD4B4 /* CoreLocation.framework in Frameworks */,
+				10FD4AD818D9761F00FBD4B4 /* QuartzCore.framework in Frameworks */,
 				10FD4A5718D9333600FBD4B4 /* CoreGraphics.framework in Frameworks */,
 				10FD4A5918D9333600FBD4B4 /* UIKit.framework in Frameworks */,
 				10FD4A5518D9333600FBD4B4 /* Foundation.framework in Frameworks */,
@@ -133,6 +159,15 @@
 		10FD4A5318D9333600FBD4B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				10FD4AE718D9768200FBD4B4 /* AMap.bundle */,
+				10FD4AE518D9766800FBD4B4 /* MAMapKit.framework */,
+				10FD4AE318D9764C00FBD4B4 /* Security.framework */,
+				10FD4AE118D9764700FBD4B4 /* libstdc++.6.0.9.dylib */,
+				10FD4ADF18D9763E00FBD4B4 /* libz.dylib */,
+				10FD4ADD18D9763800FBD4B4 /* CoreTelephony.framework */,
+				10FD4ADB18D9763100FBD4B4 /* SystemConfiguration.framework */,
+				10FD4AD918D9762A00FBD4B4 /* CoreLocation.framework */,
+				10FD4AD718D9761F00FBD4B4 /* QuartzCore.framework */,
 				10FD4A5418D9333600FBD4B4 /* Foundation.framework */,
 				10FD4A5618D9333600FBD4B4 /* CoreGraphics.framework */,
 				10FD4A5818D9333600FBD4B4 /* UIKit.framework */,
@@ -271,6 +306,7 @@
 			files = (
 				10FD4A5F18D9333600FBD4B4 /* InfoPlist.strings in Resources */,
 				109D050C18D96B0600F67F0C /* MainViewController.xib in Resources */,
+				10FD4AE818D9768200FBD4B4 /* AMap.bundle in Resources */,
 				10FD4A6718D9333600FBD4B4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,9 +451,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ty/Desktop/Amap/AMap_iOS_API_Lib_V2.2.0/2D,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Traveller/Traveller-Prefix.pch";
 				INFOPLIST_FILE = "Traveller/Traveller-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -428,9 +469,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ty/Desktop/Amap/AMap_iOS_API_Lib_V2.2.0/2D,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Traveller/Traveller-Prefix.pch";
 				INFOPLIST_FILE = "Traveller/Traveller-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
