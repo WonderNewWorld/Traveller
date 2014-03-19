@@ -13,10 +13,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.tab = [[UITabBarController alloc] init];
-    NearShopVC *near = [[NearShopVC alloc] init];
     
+    self.tab = [[UITabBarController alloc] init];
+    
+    NearShopVC *near = [[NearShopVC alloc] init];
     [self.tab addChildViewController:near];
+    
+    SettingVC *setting = [[SettingVC alloc] init];
+    [self.tab addChildViewController:setting];
+    
     self.window.rootViewController = self.tab;
     self.window.backgroundColor = [UIColor whiteColor];
 

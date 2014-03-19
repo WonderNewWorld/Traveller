@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "NearShopVC.h"
+#import "SettingVC.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

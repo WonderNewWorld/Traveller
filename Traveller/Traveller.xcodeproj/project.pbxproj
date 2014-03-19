@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101DA76618D96779007A33DA /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 101DA76518D96779007A33DA /* SettingVC.m */; };
 		10FD4A5518D9333600FBD4B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4A5418D9333600FBD4B4 /* Foundation.framework */; };
 		10FD4A5718D9333600FBD4B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4A5618D9333600FBD4B4 /* CoreGraphics.framework */; };
 		10FD4A5918D9333600FBD4B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4A5818D9333600FBD4B4 /* UIKit.framework */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		101DA76418D96779007A33DA /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
+		101DA76518D96779007A33DA /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
 		10FD4A5118D9333600FBD4B4 /* Traveller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traveller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10FD4A5418D9333600FBD4B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		10FD4A5618D9333600FBD4B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -77,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		101DA76718D9677D007A33DA /* SettingViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				101DA76418D96779007A33DA /* SettingVC.h */,
+				101DA76518D96779007A33DA /* SettingVC.m */,
+			);
+			name = SettingViewControllers;
+			sourceTree = "<group>";
+		};
 		10FD4A4818D9333600FBD4B4 = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +122,8 @@
 		10FD4A5A18D9333600FBD4B4 /* Traveller */ = {
 			isa = PBXGroup;
 			children = (
-				10FD4A8318D9666000FBD4B4 /* NearShop */,
+				101DA76718D9677D007A33DA /* SettingViewControllers */,
+				10FD4A8318D9666000FBD4B4 /* NearShopViewControllers */,
 				10FD4A6318D9333600FBD4B4 /* AppDelegate.h */,
 				10FD4A6418D9333600FBD4B4 /* AppDelegate.m */,
 				10FD4A6618D9333600FBD4B4 /* Images.xcassets */,
@@ -148,13 +161,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		10FD4A8318D9666000FBD4B4 /* NearShop */ = {
+		10FD4A8318D9666000FBD4B4 /* NearShopViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				10FD4A8418D9668800FBD4B4 /* NearShopVC.h */,
 				10FD4A8518D9668800FBD4B4 /* NearShopVC.m */,
 			);
-			name = NearShop;
+			name = NearShopViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10FD4A8618D9668800FBD4B4 /* NearShopVC.m in Sources */,
+				101DA76618D96779007A33DA /* SettingVC.m in Sources */,
 				10FD4A6518D9333600FBD4B4 /* AppDelegate.m in Sources */,
 				10FD4A6118D9333600FBD4B4 /* main.m in Sources */,
 			);
@@ -457,6 +471,7 @@
 				10FD4A7F18D9333700FBD4B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10FD4A8018D9333700FBD4B4 /* Build configuration list for PBXNativeTarget "TravellerTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +480,7 @@
 				10FD4A8218D9333700FBD4B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
