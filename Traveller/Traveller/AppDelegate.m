@@ -16,6 +16,8 @@
     
     self.tab = [[UITabBarController alloc] init];
     
+    MainViewController *main=[[MainViewController alloc] init];
+    [self.tab addChildViewController:main];
     NearShopVC *near = [[NearShopVC alloc] init];
     [self.tab addChildViewController:near];
     

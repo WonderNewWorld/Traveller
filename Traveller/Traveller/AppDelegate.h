@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "NearShopVC.h"
 #import "SettingVC.h"
-
+#import "MainViewController.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
