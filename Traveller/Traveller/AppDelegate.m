@@ -15,14 +15,19 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     self.tab = [[UITabBarController alloc] init];
-    
+    //首页推荐
     MainViewController *main=[[MainViewController alloc] init];
     [self.tab addChildViewController:main];
+    //附近
     NearShopVC *near = [[NearShopVC alloc] init];
     [self.tab addChildViewController:near];
-    
+    //设置
     SettingVC *setting = [[SettingVC alloc] init];
     [self.tab addChildViewController:setting];
+    //tab按钮
+    main.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"推荐" image:nil selectedImage:nil];
+    near.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"附近" image:nil selectedImage:nil];
+    setting.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"设置" image:nil selectedImage:nil];
     
     self.window.rootViewController = self.tab;
     self.window.backgroundColor = [UIColor whiteColor];
