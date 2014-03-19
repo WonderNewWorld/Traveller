@@ -94,6 +94,7 @@
 			name = SettingViewControllers;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		109DE00A18D968F9009CFC20 /* MainViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +103,13 @@
 				109DE00D18D9692E009CFC20 /* MainViewController.xib */,
 			);
 			name = MainViewControllers;
+=======
+		10F5464B18D968CB00EBE52B /* PostsViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PostsViewControllers;
+>>>>>>> 01f86eea067e2a3d91a1ffa04d85cf76eab7d23e
 			sourceTree = "<group>";
 		};
 		10FD4A4818D9333600FBD4B4 = {
@@ -137,7 +145,11 @@
 		10FD4A5A18D9333600FBD4B4 /* Traveller */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				109DE00A18D968F9009CFC20 /* MainViewControllers */,
+=======
+				10F5464B18D968CB00EBE52B /* PostsViewControllers */,
+>>>>>>> 01f86eea067e2a3d91a1ffa04d85cf76eab7d23e
 				101DA76718D9677D007A33DA /* SettingViewControllers */,
 				10FD4A8318D9666000FBD4B4 /* NearShopViewControllers */,
 				10FD4A6318D9333600FBD4B4 /* AppDelegate.h */,
