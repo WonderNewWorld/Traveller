@@ -28,7 +28,7 @@
     [super viewDidLoad];
 	
     
-    [MAMapServices sharedServices].apiKey =@"0576eb085c121d94c367066ea2606715";
+    [MAMapServices sharedServices].apiKey = @"0576eb085c121d94c367066ea2606715";
     //搜索栏
     self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width, 40)];
     [self.view addSubview:self.searchBar];
