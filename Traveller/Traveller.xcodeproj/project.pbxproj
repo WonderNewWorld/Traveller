@@ -14,7 +14,6 @@
 		109D050B18D96B0600F67F0C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 109D050918D96B0600F67F0C /* MainViewController.m */; };
 		109D050C18D96B0600F67F0C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 109D050A18D96B0600F67F0C /* MainViewController.xib */; };
 		10F30AEC18DAA86E0031D6F7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AEB18DAA86E0031D6F7 /* OpenGLES.framework */; };
-		10F30AEE18DAAB390031D6F7 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AED18DAAB390031D6F7 /* MAMapKit.framework */; };
 		10F30AF018DAAB400031D6F7 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AEF18DAAB400031D6F7 /* AMapSearchKit.framework */; };
 		10F30AF218DAAB480031D6F7 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 10F30AF118DAAB480031D6F7 /* AMap.bundle */; };
 		10F30B1018DAC9330031D6F7 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30AF818DAC9330031D6F7 /* NSObject+SBJson.m */; };
@@ -52,6 +51,7 @@
 		10FD4AE018D9763E00FBD4B4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4ADF18D9763E00FBD4B4 /* libz.dylib */; };
 		10FD4AE218D9764700FBD4B4 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4AE118D9764700FBD4B4 /* libstdc++.6.0.9.dylib */; };
 		10FD4AE418D9764C00FBD4B4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4AE318D9764C00FBD4B4 /* Security.framework */; };
+		1FCF56E418DB0B2600FD225B /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AED18DAAB390031D6F7 /* MAMapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,13 +142,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCF56E418DB0B2600FD225B /* MAMapKit.framework in Frameworks */,
 				10F30AEC18DAA86E0031D6F7 /* OpenGLES.framework in Frameworks */,
 				10FD4AE418D9764C00FBD4B4 /* Security.framework in Frameworks */,
 				10FD4AE218D9764700FBD4B4 /* libstdc++.6.0.9.dylib in Frameworks */,
 				10FD4AE018D9763E00FBD4B4 /* libz.dylib in Frameworks */,
 				10FD4ADE18D9763800FBD4B4 /* CoreTelephony.framework in Frameworks */,
 				10FD4ADC18D9763100FBD4B4 /* SystemConfiguration.framework in Frameworks */,
-				10F30AEE18DAAB390031D6F7 /* MAMapKit.framework in Frameworks */,
 				10F30AF018DAAB400031D6F7 /* AMapSearchKit.framework in Frameworks */,
 				10FD4ADA18D9762A00FBD4B4 /* CoreLocation.framework in Frameworks */,
 				10FD4AD818D9761F00FBD4B4 /* QuartzCore.framework in Frameworks */,
@@ -608,6 +608,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/ty/Desktop/Traveller/Traveller,
+					/Users/chenwei/Desktop/Traveller/Traveller,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Traveller/Traveller-Prefix.pch";
@@ -628,6 +629,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/ty/Desktop/Traveller/Traveller,
+					/Users/chenwei/Desktop/Traveller/Traveller,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Traveller/Traveller-Prefix.pch";
