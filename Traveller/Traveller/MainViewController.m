@@ -35,21 +35,23 @@
     self.title=@"热门推荐";
     
 }
+//热门推荐景区
 -(void)readyhotspot{
     self.hot_Spot_view=[[UIView alloc] initWithFrame:CGRectMake(0, 80, self.view.frame.size.width, 150)];
     self.hot_Spot_view.backgroundColor=[UIColor redColor];
 }
-
+//热门经验帖
 -(void)readhotpost{
     self.hot_post_view=[[UIView alloc]initWithFrame:CGRectMake(0, 240, self.view.frame.size.width, 150)];
     self.hot_post_view.backgroundColor=[UIColor blueColor];
 }
-
+//功能界面
 -(void)readyFunction{
     self.Function_view=[[UIView alloc]initWithFrame:CGRectMake(0, 400, self.view.frame.size.width, 200)];
     self.Function_view.backgroundColor=[UIColor grayColor];
     
 }
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
