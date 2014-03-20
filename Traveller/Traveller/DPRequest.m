@@ -60,5 +60,22 @@
 	}
 }
 
++ (NSArray *)getBusinessListByCity:(NSString *)city andCategory:(NSString *)category andRadius:(int)radius andSort:(int)sort andPage:(int)page{
+    
+    NSMutableArray *arrBusiness = [[NSMutableArray alloc] init];
+    NSString *strParam = [NSString stringWithFormat:@"category=%@&city=%@&latitude=29.59&longitude=106.54&sort=%d&limit=10&offset_type=1&out_offset_type=1&platform=2&page=%d&radius=%d",category,city,sort,page,radius];
+    NSString *strUrl = [NSString stringWithFormat:@"%@%@?%@",DPRequestUrl,DPRequestFindShops,strParam];
+    NSURL *url = [NSURL URLWithString:[DPRequest serializeURL:strUrl params:nil]];
+    
+    NSString *strContent = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+    NSDictionary *dic = [strContent JSONValue];
+    NSArray *arrJsonData = [dic objectForKey:@"businesses"];
+    for (int i=0; i<arrJsonData.count; i++) {
+        NSDictionary *dicBusiness = arrJsonData[i];
+        BusinessModel *temp = [BusinessModel setDetailWithDic:dicBusiness];
+        [arrBusiness addObject:temp];
+    }
+    return arrBusiness;
+}
 
 @end

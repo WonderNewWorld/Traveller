@@ -44,4 +44,5 @@
 @property(nonatomic,assign)int has_online_reservation;  //是否有在线预订，0:没有，1:有
 @property(nonatomic,strong)NSString *online_reservation_url;    //在线预订页面链接，目前仅返回HTML5站点链接
 
++ (BusinessModel *)setDetailWithDic:(NSDictionary *)dic;
 @end
