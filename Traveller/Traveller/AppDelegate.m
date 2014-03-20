@@ -7,23 +7,16 @@
 //
 
 #import "AppDelegate.h"
-<<<<<<< HEAD
 #import <MAMapKit/MAMapKit.h>
-=======
->>>>>>> FETCH_HEAD
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
     self.tab = [[UITabBarController alloc] init];
-<<<<<<< HEAD
     [MAMapServices sharedServices].apiKey = MAMapApiKey;
     
-=======
->>>>>>> FETCH_HEAD
     //首页推荐
     MainViewController *main=[[MainViewController alloc] init];
     [self.tab addChildViewController:main];
