@@ -29,6 +29,7 @@
 		10F30B1918DAC9330031D6F7 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30B0B18DAC9330031D6F7 /* SBJsonTokeniser.m */; };
 		10F30B1A18DAC9330031D6F7 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30B0D18DAC9330031D6F7 /* SBJsonUTF8Stream.m */; };
 		10F30B1B18DAC9330031D6F7 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30B0F18DAC9330031D6F7 /* SBJsonWriter.m */; };
+		10F30B2C18DADA9C0031D6F7 /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30B2B18DADA9C0031D6F7 /* DPRequest.m */; };
 		10FD4A5518D9333600FBD4B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4A5418D9333600FBD4B4 /* Foundation.framework */; };
 		10FD4A5718D9333600FBD4B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4A5618D9333600FBD4B4 /* CoreGraphics.framework */; };
 		10FD4A5918D9333600FBD4B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4A5818D9333600FBD4B4 /* UIKit.framework */; };
@@ -101,6 +102,8 @@
 		10F30B0D18DAC9330031D6F7 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		10F30B0E18DAC9330031D6F7 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		10F30B0F18DAC9330031D6F7 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		10F30B2A18DADA9C0031D6F7 /* DPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRequest.h; sourceTree = "<group>"; };
+		10F30B2B18DADA9C0031D6F7 /* DPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRequest.m; sourceTree = "<group>"; };
 		10FD4A5118D9333600FBD4B4 /* Traveller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traveller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10FD4A5418D9333600FBD4B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		10FD4A5618D9333600FBD4B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -317,6 +320,8 @@
 				10581AD918DA8EC3001A05E6 /* NearShopMapView.m */,
 				10581ADB18DA8ED4001A05E6 /* NearShopListView.h */,
 				10581ADC18DA8ED4001A05E6 /* NearShopListView.m */,
+				10F30B2A18DADA9C0031D6F7 /* DPRequest.h */,
+				10F30B2B18DADA9C0031D6F7 /* DPRequest.m */,
 			);
 			name = NearShopViewControllers;
 			sourceTree = "<group>";
@@ -458,6 +463,7 @@
 				10F30B1A18DAC9330031D6F7 /* SBJsonUTF8Stream.m in Sources */,
 				10FD4A6118D9333600FBD4B4 /* main.m in Sources */,
 				10F30B1718DAC9330031D6F7 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				10F30B2C18DADA9C0031D6F7 /* DPRequest.m in Sources */,
 				10F30B1618DAC9330031D6F7 /* SBJsonStreamWriter.m in Sources */,
 				10F30B1818DAC9330031D6F7 /* SBJsonStreamWriterState.m in Sources */,
 				10F30B1218DAC9330031D6F7 /* SBJsonStreamParser.m in Sources */,

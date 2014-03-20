@@ -24,9 +24,10 @@
 }
 
 - (void)requestShopList{
-    NSString *strSign = [NSString stringWithFormat:@"appkey=%@&sign=%@&",DPAppKey,DPAppSecret];
     NSString *strParam = @"category=美食&city=上海&latitude=31.18268013000488&longitude=121.42769622802734&sort=7&limit=20&offset_type=1&out_offset_type=1&platform=2";
-    NSURL *url = [NSURL URLWithString:[[NSString stringWithFormat:@"%@%@?%@%@",DPRequestUrl,DPRequestFindShops,strSign,strParam] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSString *strUrl = [NSString stringWithFormat:@"%@%@?%@",DPRequestUrl,DPRequestFindShops,strParam];
+    NSURL *url = [NSURL URLWithString:[DPRequest serializeURL:strUrl params:nil]];
+    
     NSString *strContent = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
     
 }

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SBJson.h"
+#import "DPRequest.h"
 
 
 @interface NearShopListView : UIView
