@@ -7,12 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "weatherjson.h"
-#import "weatherModel.h"
+
 @interface MainViewController : UIViewController
 @property(nonatomic,strong)UIView *hot_Spot_view;
 @property(nonatomic,strong)UIView *hot_post_view;
 @property(nonatomic,strong)UIView *Function_view;
-@property(nonatomic,strong)UIView *weather_view;
-@property(nonatomic,strong)weatherModel *weather_model;
 @end

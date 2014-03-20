@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NearShopListView.h"
-#import "NearShopMapView.h"
+#import <MAMapKit/MAMapKit.h>
 
-@interface NearShopVC : UIViewController
+@interface NearShopVC : UIViewController <MAMapViewDelegate>
+
 @property (strong,nonatomic)UISearchBar *searchBar;
+@property (strong,nonatomic)MAMapView *mapView;
+@property (strong,nonatomic)UITableView *listView;
 @property (strong,nonatomic)UISegmentedControl *segmentType;
-@property (strong,nonatomic)NearShopListView *listView;
-@property (strong,nonatomic)NearShopMapView *mapView;
+
 @end

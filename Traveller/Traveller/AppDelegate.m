@@ -7,14 +7,14 @@
 //
 
 #import "AppDelegate.h"
-#import <MAMapKit/MAMapKit.h>
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     self.tab = [[UITabBarController alloc] init];
-    [MAMapServices sharedServices].apiKey = @"0576eb085c121d94c367066ea2606715";
     //首页推荐
     MainViewController *main=[[MainViewController alloc] init];
     [self.tab addChildViewController:main];
