@@ -14,11 +14,15 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor yellowColor];
-        self.listView = [[UITableView alloc] initWithFrame:self.bounds];
+        //附近商户列表
+        self.listView = [[UITableView alloc] initWithFrame:CGRectMake(0, 30, self.bounds.size.width, self.bounds.size.height-30)];
         [self addSubview:self.listView];
         //seg商铺类型选择
         [self requestShopList];
+        NSArray *types = @[@"距离",@"类型",@"排序"];
+        self.segShopType = [[UISegmentedControl alloc] initWithItems:types];
+        self.segShopType.frame = CGRectMake(0, 0, self.bounds.size.width, 30);
+        [self addSubview:self.segShopType];
     }
     return self;
 }

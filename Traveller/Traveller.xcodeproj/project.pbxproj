@@ -30,6 +30,8 @@
 		10F30B1A18DAC9330031D6F7 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30B0D18DAC9330031D6F7 /* SBJsonUTF8Stream.m */; };
 		10F30B1B18DAC9330031D6F7 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30B0F18DAC9330031D6F7 /* SBJsonWriter.m */; };
 		10F30B2C18DADA9C0031D6F7 /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30B2B18DADA9C0031D6F7 /* DPRequest.m */; };
+		10F30B2F18DADEED0031D6F7 /* BusinessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30B2E18DADEED0031D6F7 /* BusinessModel.m */; };
+		10F30B3218DAE23E0031D6F7 /* BusinessDealModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30B3118DAE23E0031D6F7 /* BusinessDealModel.m */; };
 		10FD4A5518D9333600FBD4B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4A5418D9333600FBD4B4 /* Foundation.framework */; };
 		10FD4A5718D9333600FBD4B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4A5618D9333600FBD4B4 /* CoreGraphics.framework */; };
 		10FD4A5918D9333600FBD4B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4A5818D9333600FBD4B4 /* UIKit.framework */; };
@@ -104,6 +106,10 @@
 		10F30B0F18DAC9330031D6F7 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		10F30B2A18DADA9C0031D6F7 /* DPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRequest.h; sourceTree = "<group>"; };
 		10F30B2B18DADA9C0031D6F7 /* DPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRequest.m; sourceTree = "<group>"; };
+		10F30B2D18DADEEC0031D6F7 /* BusinessModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessModel.h; sourceTree = "<group>"; };
+		10F30B2E18DADEED0031D6F7 /* BusinessModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessModel.m; sourceTree = "<group>"; };
+		10F30B3018DAE23E0031D6F7 /* BusinessDealModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessDealModel.h; sourceTree = "<group>"; };
+		10F30B3118DAE23E0031D6F7 /* BusinessDealModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessDealModel.m; sourceTree = "<group>"; };
 		10FD4A5118D9333600FBD4B4 /* Traveller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traveller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10FD4A5418D9333600FBD4B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		10FD4A5618D9333600FBD4B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -329,6 +335,10 @@
 		10FD4AEA18D9860E00FBD4B4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				10F30B2D18DADEEC0031D6F7 /* BusinessModel.h */,
+				10F30B2E18DADEED0031D6F7 /* BusinessModel.m */,
+				10F30B3018DAE23E0031D6F7 /* BusinessDealModel.h */,
+				10F30B3118DAE23E0031D6F7 /* BusinessDealModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -460,8 +470,10 @@
 				10F30B1318DAC9330031D6F7 /* SBJsonStreamParserAccumulator.m in Sources */,
 				10F30B1118DAC9330031D6F7 /* SBJsonParser.m in Sources */,
 				10F30B1018DAC9330031D6F7 /* NSObject+SBJson.m in Sources */,
+				10F30B2F18DADEED0031D6F7 /* BusinessModel.m in Sources */,
 				10F30B1A18DAC9330031D6F7 /* SBJsonUTF8Stream.m in Sources */,
 				10FD4A6118D9333600FBD4B4 /* main.m in Sources */,
+				10F30B3218DAE23E0031D6F7 /* BusinessDealModel.m in Sources */,
 				10F30B1718DAC9330031D6F7 /* SBJsonStreamWriterAccumulator.m in Sources */,
 				10F30B2C18DADA9C0031D6F7 /* DPRequest.m in Sources */,
 				10F30B1618DAC9330031D6F7 /* SBJsonStreamWriter.m in Sources */,
