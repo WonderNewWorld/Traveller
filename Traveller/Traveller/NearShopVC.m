@@ -28,7 +28,7 @@
     [super viewDidLoad];
 	
     
-    [MAMapServices sharedServices].apiKey = @"0576eb085c121d94c367066ea2606715";
+    
     //搜索栏
     self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width, 40)];
     [self.view addSubview:self.searchBar];
@@ -39,14 +39,10 @@
     self.segmentType.selectedSegmentIndex = 0;
     [self.view addSubview:self.segmentType];
     //列表视图
-    self.listView=[[UITableView alloc] initWithFrame:CGRectMake(0, 90, 320, self.view.bounds.size.height-134)];
-    self.listView.hidden = NO;
+    self.listView=[[NearShopListView alloc] initWithFrame:CGRectMake(0, 90, 320, self.view.bounds.size.height-134)];
     [self.view addSubview:self.listView];
     //地图视图
-    self.mapView=[[MAMapView alloc] initWithFrame:CGRectMake(0, 90, 320, self.view.bounds.size.height-134)];
-    self.mapView.delegate = self;
-    self.mapView.showTraffic = YES;
-    self.mapView.showsUserLocation = YES;
+    self.mapView=[[NearShopMapView alloc] initWithFrame:CGRectMake(0, 90, 320, self.view.bounds.size.height-134)];
     self.mapView.hidden = YES;
     [self.view addSubview:self.mapView];
 }
