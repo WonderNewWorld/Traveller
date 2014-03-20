@@ -77,7 +77,7 @@
 		10FD4ADF18D9763E00FBD4B4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		10FD4AE118D9764700FBD4B4 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		10FD4AE318D9764C00FBD4B4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		10FD4AE518D9766800FBD4B4 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../../Amap/AMap_iOS_API_Lib_V2.2.0/2D/MAMapKit.framework; sourceTree = "<group>"; };
+		10FD4AE518D9766800FBD4B4 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../../../Amap/AMap_iOS_API_Lib_V2.2.0/2D/MAMapKit.framework; sourceTree = "<group>"; };
 		10FD4AE718D9768200FBD4B4 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				10FD4AE718D9768200FBD4B4 /* AMap.bundle */,
-				10FD4AE518D9766800FBD4B4 /* MAMapKit.framework */,
 				10FD4AE318D9764C00FBD4B4 /* Security.framework */,
 				10FD4AE118D9764700FBD4B4 /* libstdc++.6.0.9.dylib */,
 				10FD4ADF18D9763E00FBD4B4 /* libz.dylib */,
@@ -182,6 +181,7 @@
 		10FD4A5A18D9333600FBD4B4 /* Traveller */ = {
 			isa = PBXGroup;
 			children = (
+				10FD4AE518D9766800FBD4B4 /* MAMapKit.framework */,
 				10FD4AEA18D9860E00FBD4B4 /* Models */,
 				10F5468B18D96BD800EBE52B /* PostsViewControllers */,
 				109D050718D96AEC00F67F0C /* MainviewControllers */,
