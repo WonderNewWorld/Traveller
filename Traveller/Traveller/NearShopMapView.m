@@ -21,12 +21,18 @@
         self.mapView.showsUserLocation = YES;
         self.mapView.userTrackingMode = 1;
         [self addSubview:self.mapView];
+        MAUserLocation *userLoc = self.mapView.userLocation;
+        CLLocationCoordinate2D coordinate = [userLoc.location coordinate];
+        //search
+        self.mapSearch.delegate = self;
+        [self searchReGeocodeWithCoordinate:coordinate];
         //btn 当前位置
         self.btnCurLocation = [[UIButton alloc] initWithFrame:CGRectMake(self.bounds.size.width-40, self.bounds.size.height-60, 30, 30)];
         self.btnCurLocation.backgroundColor = [UIColor redColor];
         [self.btnCurLocation setTitle:@"CL" forState:UIControlStateNormal];
         [self.btnCurLocation addTarget:self action:@selector(btnCurLocationAction) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.btnCurLocation];
+        
     }
     return self;
 }
@@ -36,4 +42,23 @@
     self.mapView.userTrackingMode = 1;
 }
 
+- (void)searchReGeocodeWithCoordinate:(CLLocationCoordinate2D)coordinate
+{
+    AMapReGeocodeSearchRequest *regeo = [[AMapReGeocodeSearchRequest alloc] init];
+    
+    regeo.location = [AMapGeoPoint locationWithLatitude:coordinate.latitude longitude:coordinate.longitude];
+    regeo.requireExtension = YES;
+    
+    [self.mapSearch AMapReGoecodeSearch:regeo];
+}
+#pragma mark - AMapSearchDelegate
+
+/* 逆地理编码回调. */
+- (void)onReGeocodeSearchDone:(AMapReGeocodeSearchRequest *)request response:(AMapReGeocodeSearchResponse *)response
+{
+    if (response.regeocode != nil)
+    {
+        NSLog(@"%@",response.regeocode.formattedAddress);
+    }
+}
 @end

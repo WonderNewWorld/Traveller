@@ -28,7 +28,6 @@
     [super viewDidLoad];
 	
     
-    
     //搜索栏
     self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width, 40)];
     [self.view addSubview:self.searchBar];

@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MAMapKit/MAMapView.h>
-@interface NearShopMapView : UIView <MAMapViewDelegate>
+#import <MAMapKit/MAMapKit.h>
+#import <AMapSearchKit/AMapSearchAPI.h>
+
+@interface NearShopMapView : UIView <MAMapViewDelegate,AMapSearchDelegate>
 @property (strong,nonatomic)MAMapView *mapView;
+@property (strong,nonatomic)AMapSearchAPI *mapSearch;
+
 @property (strong,nonatomic)UIButton *btnCurLocation;
+@property (strong,nonatomic)UISegmentedControl *segMapType;
 @end
