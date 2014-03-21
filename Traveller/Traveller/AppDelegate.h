@@ -10,7 +10,6 @@
 #import "NearShopVC.h"
 #import "SettingVC.h"
 #import "MainViewController.h"
-#import "PostsViewController.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
