@@ -23,17 +23,12 @@
     //附近
     NearShopVC *near = [[NearShopVC alloc] init];
     [self.tab addChildViewController:near];
-    //帖子
-    PostsViewController *Posts = [[PostsViewController alloc]init];
-    UINavigationController *nav_Posts = [[UINavigationController alloc]initWithRootViewController:Posts];
-    [self.tab addChildViewController:nav_Posts];
     //设置
     SettingVC *setting = [[SettingVC alloc] init];
     [self.tab addChildViewController:setting];
     //tab按钮
     main.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"推荐" image:nil selectedImage:nil];
     near.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"附近" image:nil selectedImage:nil];
-    nav_Posts.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"帖子" image:nil selectedImage:nil];
     setting.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"设置" image:nil selectedImage:nil];
     
     self.window.rootViewController = self.tab;
