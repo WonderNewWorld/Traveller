@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "SBJson.h"
-#import "DPRequest.h"
 
 
-@interface NearShopListView : UIView<UITableViewDelegate,UITableViewDataSource>
+@interface NearShopListView : UIView
 
 @property (strong,nonatomic)UITableView *listView;
 @property (strong,nonatomic)UISegmentedControl *segShopType;
-@property (strong,nonatomic)NSMutableArray *arrBusiness;
 @end
