@@ -25,7 +25,6 @@
 		10978F3B18DC0AD3006D1915 /* MaintableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10978F3A18DC0AD3006D1915 /* MaintableCell.m */; };
 		10978F3F18DC136B006D1915 /* 重庆.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10978F3E18DC136B006D1915 /* 重庆.jpg */; };
 		10F30AEC18DAA86E0031D6F7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AEB18DAA86E0031D6F7 /* OpenGLES.framework */; };
-		10F30AEE18DAAB390031D6F7 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AED18DAAB390031D6F7 /* MAMapKit.framework */; };
 		10F30AF018DAAB400031D6F7 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AEF18DAAB400031D6F7 /* AMapSearchKit.framework */; };
 		10F30AF218DAAB480031D6F7 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 10F30AF118DAAB480031D6F7 /* AMap.bundle */; };
 		10F30B1018DAC9330031D6F7 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30AF818DAC9330031D6F7 /* NSObject+SBJson.m */; };
@@ -40,6 +39,9 @@
 		10F30B1918DAC9330031D6F7 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30B0B18DAC9330031D6F7 /* SBJsonTokeniser.m */; };
 		10F30B1A18DAC9330031D6F7 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30B0D18DAC9330031D6F7 /* SBJsonUTF8Stream.m */; };
 		10F30B1B18DAC9330031D6F7 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30B0F18DAC9330031D6F7 /* SBJsonWriter.m */; };
+		10F30B2C18DADA9C0031D6F7 /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30B2B18DADA9C0031D6F7 /* DPRequest.m */; };
+		10F30B2F18DADEED0031D6F7 /* BusinessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30B2E18DADEED0031D6F7 /* BusinessModel.m */; };
+		10F30B3218DAE23E0031D6F7 /* BusinessDealModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F30B3118DAE23E0031D6F7 /* BusinessDealModel.m */; };
 		10FD4A5518D9333600FBD4B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4A5418D9333600FBD4B4 /* Foundation.framework */; };
 		10FD4A5718D9333600FBD4B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4A5618D9333600FBD4B4 /* CoreGraphics.framework */; };
 		10FD4A5918D9333600FBD4B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4A5818D9333600FBD4B4 /* UIKit.framework */; };
@@ -60,6 +62,7 @@
 		10FD4AE018D9763E00FBD4B4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4ADF18D9763E00FBD4B4 /* libz.dylib */; };
 		10FD4AE218D9764700FBD4B4 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4AE118D9764700FBD4B4 /* libstdc++.6.0.9.dylib */; };
 		10FD4AE418D9764C00FBD4B4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4AE318D9764C00FBD4B4 /* Security.framework */; };
+		1FCF56E418DB0B2600FD225B /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AED18DAAB390031D6F7 /* MAMapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +129,12 @@
 		10F30B0D18DAC9330031D6F7 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		10F30B0E18DAC9330031D6F7 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		10F30B0F18DAC9330031D6F7 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		10F30B2A18DADA9C0031D6F7 /* DPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRequest.h; sourceTree = "<group>"; };
+		10F30B2B18DADA9C0031D6F7 /* DPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRequest.m; sourceTree = "<group>"; };
+		10F30B2D18DADEEC0031D6F7 /* BusinessModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessModel.h; sourceTree = "<group>"; };
+		10F30B2E18DADEED0031D6F7 /* BusinessModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessModel.m; sourceTree = "<group>"; };
+		10F30B3018DAE23E0031D6F7 /* BusinessDealModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessDealModel.h; sourceTree = "<group>"; };
+		10F30B3118DAE23E0031D6F7 /* BusinessDealModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessDealModel.m; sourceTree = "<group>"; };
 		10FD4A5118D9333600FBD4B4 /* Traveller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traveller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10FD4A5418D9333600FBD4B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		10FD4A5618D9333600FBD4B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -158,13 +167,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCF56E418DB0B2600FD225B /* MAMapKit.framework in Frameworks */,
 				10F30AEC18DAA86E0031D6F7 /* OpenGLES.framework in Frameworks */,
 				10FD4AE418D9764C00FBD4B4 /* Security.framework in Frameworks */,
 				10FD4AE218D9764700FBD4B4 /* libstdc++.6.0.9.dylib in Frameworks */,
 				10FD4AE018D9763E00FBD4B4 /* libz.dylib in Frameworks */,
 				10FD4ADE18D9763800FBD4B4 /* CoreTelephony.framework in Frameworks */,
 				10FD4ADC18D9763100FBD4B4 /* SystemConfiguration.framework in Frameworks */,
-				10F30AEE18DAAB390031D6F7 /* MAMapKit.framework in Frameworks */,
 				10F30AF018DAAB400031D6F7 /* AMapSearchKit.framework in Frameworks */,
 				10FD4ADA18D9762A00FBD4B4 /* CoreLocation.framework in Frameworks */,
 				10FD4AD818D9761F00FBD4B4 /* QuartzCore.framework in Frameworks */,
@@ -362,6 +371,8 @@
 				10581AD918DA8EC3001A05E6 /* NearShopMapView.m */,
 				10581ADB18DA8ED4001A05E6 /* NearShopListView.h */,
 				10581ADC18DA8ED4001A05E6 /* NearShopListView.m */,
+				10F30B2A18DADA9C0031D6F7 /* DPRequest.h */,
+				10F30B2B18DADA9C0031D6F7 /* DPRequest.m */,
 			);
 			name = NearShopViewControllers;
 			sourceTree = "<group>";
@@ -369,8 +380,15 @@
 		10FD4AEA18D9860E00FBD4B4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				1021B6BB18DAD9DC0041711B /* weatherModel.h */,
 				1021B6BA18DAD9DC0041711B /* weatherModel.m */,
+=======
+				10F30B2D18DADEEC0031D6F7 /* BusinessModel.h */,
+				10F30B2E18DADEED0031D6F7 /* BusinessModel.m */,
+				10F30B3018DAE23E0031D6F7 /* BusinessDealModel.h */,
+				10F30B3118DAE23E0031D6F7 /* BusinessDealModel.m */,
+>>>>>>> FETCH_HEAD
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -512,9 +530,12 @@
 				10978F3B18DC0AD3006D1915 /* MaintableCell.m in Sources */,
 				10F30B1118DAC9330031D6F7 /* SBJsonParser.m in Sources */,
 				10F30B1018DAC9330031D6F7 /* NSObject+SBJson.m in Sources */,
+				10F30B2F18DADEED0031D6F7 /* BusinessModel.m in Sources */,
 				10F30B1A18DAC9330031D6F7 /* SBJsonUTF8Stream.m in Sources */,
 				10FD4A6118D9333600FBD4B4 /* main.m in Sources */,
+				10F30B3218DAE23E0031D6F7 /* BusinessDealModel.m in Sources */,
 				10F30B1718DAC9330031D6F7 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				10F30B2C18DADA9C0031D6F7 /* DPRequest.m in Sources */,
 				10F30B1618DAC9330031D6F7 /* SBJsonStreamWriter.m in Sources */,
 				10F30B1818DAC9330031D6F7 /* SBJsonStreamWriterState.m in Sources */,
 				10F30B1218DAC9330031D6F7 /* SBJsonStreamParser.m in Sources */,
@@ -648,6 +669,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/ty/Desktop/Traveller/Traveller,
+					/Users/chenwei/Desktop/Traveller/Traveller,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Traveller/Traveller-Prefix.pch";
@@ -668,6 +690,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/ty/Desktop/Traveller/Traveller,
+					/Users/chenwei/Desktop/Traveller/Traveller,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Traveller/Traveller-Prefix.pch";
