@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1012E5F118DC29700060FBD6 /* ShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1012E5F018DC29700060FBD6 /* ShopCell.m */; };
 		10186BEF18DBDCBA00D906A0 /* Post_activity_postsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 10186BEE18DBDCBA00D906A0 /* Post_activity_postsVC.m */; };
 		10186BF318DBDD2A00D906A0 /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10186BF218DBDD2A00D906A0 /* PostsViewController.m */; };
 		10186BF818DC16CC00D906A0 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10186BF718DC16CC00D906A0 /* iCarousel.m */; };
@@ -69,6 +70,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1012E5EF18DC29700060FBD6 /* ShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCell.h; sourceTree = "<group>"; };
+		1012E5F018DC29700060FBD6 /* ShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCell.m; sourceTree = "<group>"; };
 		10186BED18DBDCBA00D906A0 /* Post_activity_postsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post_activity_postsVC.h; sourceTree = "<group>"; };
 		10186BEE18DBDCBA00D906A0 /* Post_activity_postsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post_activity_postsVC.m; sourceTree = "<group>"; };
 		10186BF118DBDD2A00D906A0 /* PostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsViewController.h; sourceTree = "<group>"; };
@@ -373,6 +376,8 @@
 				10581ADC18DA8ED4001A05E6 /* NearShopListView.m */,
 				10F30B2A18DADA9C0031D6F7 /* DPRequest.h */,
 				10F30B2B18DADA9C0031D6F7 /* DPRequest.m */,
+				1012E5EF18DC29700060FBD6 /* ShopCell.h */,
+				1012E5F018DC29700060FBD6 /* ShopCell.m */,
 			);
 			name = NearShopViewControllers;
 			sourceTree = "<group>";
@@ -508,6 +513,7 @@
 				101DA76618D96779007A33DA /* SettingVC.m in Sources */,
 				10F30B1518DAC9330031D6F7 /* SBJsonStreamParserState.m in Sources */,
 				10FD4A6518D9333600FBD4B4 /* AppDelegate.m in Sources */,
+				1012E5F118DC29700060FBD6 /* ShopCell.m in Sources */,
 				10581ADA18DA8EC3001A05E6 /* NearShopMapView.m in Sources */,
 				10581ADD18DA8ED4001A05E6 /* NearShopListView.m in Sources */,
 				10186BEF18DBDCBA00D906A0 /* Post_activity_postsVC.m in Sources */,
