@@ -7,9 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MainViewController : UIViewController
+#import "SBJson.h"
+#import "weatherjson.h"
+#import "weatherModel.h"
+#import "MaintableCell.h"
+@interface MainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
+    NSMutableArray *_Viewarr;
+    NSDictionary *_dicCityInfo;
+}
 @property(nonatomic,strong)UIView *hot_Spot_view;
 @property(nonatomic,strong)UIView *hot_post_view;
 @property(nonatomic,strong)UIView *Function_view;
+@property(nonatomic,strong)UIView *weather_view;
+@property(nonatomic,strong)UITableView *table;
+@property(nonatomic,strong)UIScrollView *hot_spot_scrollView;
+@property(nonatomic,strong)weatherModel *weather_model;
 @end
