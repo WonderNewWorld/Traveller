@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1012B89F18DC221B00B73E0B /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AED18DAAB390031D6F7 /* MAMapKit.framework */; };
 		1012B8A318DC25A900B73E0B /* money.png in Resources */ = {isa = PBXBuildFile; fileRef = 1012B8A218DC25A900B73E0B /* money.png */; };
 		101DA76618D96779007A33DA /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 101DA76518D96779007A33DA /* SettingVC.m */; };
 		101DA76B18D97707007A33DA /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 101DA76A18D97707007A33DA /* SettingVC.xib */; };
@@ -61,6 +60,7 @@
 		10FD4AE018D9763E00FBD4B4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4ADF18D9763E00FBD4B4 /* libz.dylib */; };
 		10FD4AE218D9764700FBD4B4 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4AE118D9764700FBD4B4 /* libstdc++.6.0.9.dylib */; };
 		10FD4AE418D9764C00FBD4B4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FD4AE318D9764C00FBD4B4 /* Security.framework */; };
+		1FC864E418DEC2BD001CFC61 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AED18DAAB390031D6F7 /* MAMapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,7 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1012B89F18DC221B00B73E0B /* MAMapKit.framework in Frameworks */,
+				1FC864E418DEC2BD001CFC61 /* MAMapKit.framework in Frameworks */,
 				10F30AEC18DAA86E0031D6F7 /* OpenGLES.framework in Frameworks */,
 				10FD4AE418D9764C00FBD4B4 /* Security.framework in Frameworks */,
 				10FD4AE218D9764700FBD4B4 /* libstdc++.6.0.9.dylib in Frameworks */,
@@ -653,6 +653,7 @@
 					"$(inherited)",
 					/Users/ty/Desktop/Traveller/Traveller,
 					/Volumes/1/Traveller/Traveller,
+					/Users/chenwei/Desktop/Traveller/Traveller,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Traveller/Traveller-Prefix.pch";
@@ -674,6 +675,7 @@
 					"$(inherited)",
 					/Users/ty/Desktop/Traveller/Traveller,
 					/Volumes/1/Traveller/Traveller,
+					/Users/chenwei/Desktop/Traveller/Traveller,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Traveller/Traveller-Prefix.pch";
