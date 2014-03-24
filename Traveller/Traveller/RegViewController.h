@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  RegViewController.h
 //  Traveller
 //
 //  Created by TY on 14-3-24.
@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface RegViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *txtName;
+@property (weak, nonatomic) IBOutlet UITextField *txtUserNmae;
 @property (weak, nonatomic) IBOutlet UITextField *txtPass;
-@property (weak, nonatomic) IBOutlet UIButton *btnLogin;
-- (IBAction)touchLogin:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btnReg;
+- (IBAction)touchReg:(id)sender;
 
 @end

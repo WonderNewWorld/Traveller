@@ -42,7 +42,6 @@
     // Dispose of any resources that can be recreated.
 }
 -(void)onClickUILable{
-
     LoginViewController *loginVC=[[LoginViewController alloc]init];
 	loginVC.hidesBottomBarWhenPushed=YES;
 	[self.navigationController pushViewController:loginVC animated:NO];

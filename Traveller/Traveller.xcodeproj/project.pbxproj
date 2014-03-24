@@ -21,6 +21,8 @@
 		1070E87018E00A3D00AE9B6B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1070E86E18E00A3D00AE9B6B /* LoginViewController.xib */; };
 		1070E87218E013DE00AE9B6B /* contenttoolbar_hd_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 1070E87118E013DE00AE9B6B /* contenttoolbar_hd_back.png */; };
 		1070E87418E0159600AE9B6B /* reg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1070E87318E0159600AE9B6B /* reg.png */; };
+		1070E87D18E029F800AE9B6B /* RegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1070E87B18E029F800AE9B6B /* RegViewController.m */; };
+		1070E87E18E029F800AE9B6B /* RegViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1070E87C18E029F800AE9B6B /* RegViewController.xib */; };
 		1087029418DFD84D00A0D086 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1087028A18DFD84D00A0D086 /* MJRefresh.bundle */; };
 		1087029518DFD84D00A0D086 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1087028D18DFD84D00A0D086 /* MJRefreshBaseView.m */; };
 		1087029618DFD84D00A0D086 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1087028F18DFD84D00A0D086 /* MJRefreshConst.m */; };
@@ -134,6 +136,9 @@
 		1070E86E18E00A3D00AE9B6B /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		1070E87118E013DE00AE9B6B /* contenttoolbar_hd_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contenttoolbar_hd_back.png; sourceTree = "<group>"; };
 		1070E87318E0159600AE9B6B /* reg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reg.png; sourceTree = "<group>"; };
+		1070E87A18E029F800AE9B6B /* RegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegViewController.h; sourceTree = "<group>"; };
+		1070E87B18E029F800AE9B6B /* RegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegViewController.m; sourceTree = "<group>"; };
+		1070E87C18E029F800AE9B6B /* RegViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegViewController.xib; sourceTree = "<group>"; };
 		1087028A18DFD84D00A0D086 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
 		1087028B18DFD84D00A0D086 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
 		1087028C18DFD84D00A0D086 /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
@@ -334,6 +339,9 @@
 				1070E86C18E00A3D00AE9B6B /* LoginViewController.h */,
 				1070E86D18E00A3D00AE9B6B /* LoginViewController.m */,
 				1070E86E18E00A3D00AE9B6B /* LoginViewController.xib */,
+				1070E87A18E029F800AE9B6B /* RegViewController.h */,
+				1070E87B18E029F800AE9B6B /* RegViewController.m */,
+				1070E87C18E029F800AE9B6B /* RegViewController.xib */,
 			);
 			name = SettingViewControllers;
 			sourceTree = "<group>";
@@ -684,6 +692,7 @@
 				1087029418DFD84D00A0D086 /* MJRefresh.bundle in Resources */,
 				1087155718E020920019FD36 /* 多云.jpg in Resources */,
 				1087156518E020B10019FD36 /* user.json in Resources */,
+				1070E87E18E029F800AE9B6B /* RegViewController.xib in Resources */,
 				1087155918E020920019FD36 /* 霾.jpg in Resources */,
 				1087155C18E020920019FD36 /* 小雨.jpg in Resources */,
 				FE5F741B18DD77AA009BC476 /* images-4.jpeg in Resources */,
@@ -752,6 +761,7 @@
 				1087029518DFD84D00A0D086 /* MJRefreshBaseView.m in Sources */,
 				10186BEF18DBDCBA00D906A0 /* Post_activity_postsVC.m in Sources */,
 				10186BF318DBDD2A00D906A0 /* PostsViewController.m in Sources */,
+				1070E87D18E029F800AE9B6B /* RegViewController.m in Sources */,
 				10F30B1B18DAC9330031D6F7 /* SBJsonWriter.m in Sources */,
 				1087156118E0209F0019FD36 /* weatherModel.m in Sources */,
 				1087029818DFD84D00A0D086 /* MJRefreshHeaderView.m in Sources */,

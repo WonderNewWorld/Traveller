@@ -1,19 +1,19 @@
 //
-//  LoginViewController.m
+//  RegViewController.m
 //  Traveller
 //
 //  Created by TY on 14-3-24.
 //  Copyright (c) 2014年 NewWorld. All rights reserved.
 //
 
-#import "LoginViewController.h"
 #import "RegViewController.h"
 #import "SettingVC.h"
-@interface LoginViewController ()
+#import "LoginViewController.h"
+@interface RegViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation RegViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,16 +27,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.navigationController.navigationBarHidden=NO;
-	self.title=@"登陆";
-	
 	self.txtName.backgroundColor=[UIColor whiteColor];
+	self.txtUserNmae.backgroundColor=[UIColor whiteColor];
 	self.txtPass.backgroundColor=[UIColor whiteColor];
-    self.btnLogin.backgroundColor=[UIColor orangeColor];
+	self.btnReg.backgroundColor=[UIColor orangeColor];
 	
-	self.txtName.placeholder=@"用户名/邮件";
-	self.txtPass.placeholder=@"密码";
-	
+	self.txtName.placeholder=@"  你的昵称";
+	self.txtUserNmae.placeholder=@"  用户名/邮箱";
+	self.txtPass.placeholder=@"  密码";
 	
 	
 	UIView *homeButtonView = [[UIView alloc]initWithFrame:CGRectMake(-20, 0, 35, 40)];
@@ -56,39 +54,36 @@
     UIButton *rigthButton = [[UIButton alloc]initWithFrame:CGRectMake(-13, 9, 50, 25)];
     rigthButton.backgroundColor = [UIColor clearColor];
 	[rigthButton setBackgroundImage:[UIImage imageNamed:@"reg"] forState:UIControlStateNormal];
-	[rigthButton setTitle:@"注 册" forState:UIControlStateNormal];
-	
+	[rigthButton setTitle:@"登 陆" forState:UIControlStateNormal];
 	rigthButton.titleLabel.font= [UIFont systemFontOfSize: 12];
 	rigthButton.titleLabel.textColor=[UIColor blackColor];
-    [rigthButton addTarget:self action:@selector(touchReg) forControlEvents:UIControlEventTouchUpInside];
+    [rigthButton addTarget:self action:@selector(touchLogin) forControlEvents:UIControlEventTouchUpInside];
     [rigthButtonView addSubview:rigthButton];
     UIBarButtonItem *rigthButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rigthButtonView];
     self.navigationItem.rightBarButtonItem=rigthButtonItem;
+
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+   
 }
-
 
 -(void)touchBack{
 	[self.navigationController popToRootViewControllerAnimated:YES];
 }
 
--(void)touchReg{
-	RegViewController *regVC=[[RegViewController alloc]init];
-	[self.navigationController pushViewController:regVC animated:YES];
+-(void)touchLogin{
+	LoginViewController *loginVC=[[LoginViewController alloc]init];
+	[self.navigationController pushViewController:loginVC animated:YES];
 }
 
-- (IBAction)touchLogin:(id)sender {
-	//SettingVC *setVC=[[SettingVC alloc]init];
-	//setVC.hidesBottomBarWhenPushed=NO;
-	//[self.navigationController pushViewController:setVC animated:YES];
-	
+- (IBAction)touchReg:(id)sender {
 	[self.navigationController popToRootViewControllerAnimated:YES];
+	//给数据
 }
+
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
 	[self.view endEditing:YES];
