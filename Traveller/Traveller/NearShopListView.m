@@ -33,7 +33,7 @@
         self.header = [MJRefreshHeaderView header];
         self.header.scrollView = self.listView;
         self.header.delegate = self;
-        
+        [self.header beginRefreshing];
         self.footer = [MJRefreshFooterView footer];
         self.footer.scrollView = self.listView;
         self.footer.delegate = self;
