@@ -26,7 +26,7 @@
 		1087029718DFD84D00A0D086 /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1087029118DFD84D00A0D086 /* MJRefreshFooterView.m */; };
 		1087029818DFD84D00A0D086 /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1087029318DFD84D00A0D086 /* MJRefreshHeaderView.m */; };
 		1087029C18E00ABB00A0D086 /* ShopListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1087029B18E00ABB00A0D086 /* ShopListCell.m */; };
-		1087029E18E00AD100A0D086 /* ShopListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1087029D18E00AD100A0D086 /* ShopListCell.xib */; };
+		108702A218E018CE00A0D086 /* ShopListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 108702A118E018CE00A0D086 /* ShopListCell.xib */; };
 		109D050B18D96B0600F67F0C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 109D050918D96B0600F67F0C /* MainViewController.m */; };
 		109D050C18D96B0600F67F0C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 109D050A18D96B0600F67F0C /* MainViewController.xib */; };
 		10F30AEC18DAA86E0031D6F7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AEB18DAA86E0031D6F7 /* OpenGLES.framework */; };
@@ -129,7 +129,7 @@
 		1087029318DFD84D00A0D086 /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
 		1087029A18E00ABB00A0D086 /* ShopListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopListCell.h; sourceTree = "<group>"; };
 		1087029B18E00ABB00A0D086 /* ShopListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopListCell.m; sourceTree = "<group>"; };
-		1087029D18E00AD100A0D086 /* ShopListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopListCell.xib; sourceTree = "<group>"; };
+		108702A118E018CE00A0D086 /* ShopListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopListCell.xib; sourceTree = "<group>"; };
 		109D050818D96B0600F67F0C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		109D050918D96B0600F67F0C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		109D050A18D96B0600F67F0C /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -472,7 +472,7 @@
 				10F30B2B18DADA9C0031D6F7 /* DPRequest.m */,
 				1087029A18E00ABB00A0D086 /* ShopListCell.h */,
 				1087029B18E00ABB00A0D086 /* ShopListCell.m */,
-				1087029D18E00AD100A0D086 /* ShopListCell.xib */,
+				108702A118E018CE00A0D086 /* ShopListCell.xib */,
 			);
 			name = NearShopViewControllers;
 			sourceTree = "<group>";
@@ -623,7 +623,7 @@
 				FE5F741918DD77AA009BC476 /* images-2.jpeg in Resources */,
 				10FD4A6718D9333600FBD4B4 /* Images.xcassets in Resources */,
 				FE5F741D18DD77AA009BC476 /* images-6.jpeg in Resources */,
-				1087029E18E00AD100A0D086 /* ShopListCell.xib in Resources */,
+				108702A218E018CE00A0D086 /* ShopListCell.xib in Resources */,
 				FE5F741C18DD77AA009BC476 /* images-5.jpeg in Resources */,
 				1070E87418E0159600AE9B6B /* reg.png in Resources */,
 			);

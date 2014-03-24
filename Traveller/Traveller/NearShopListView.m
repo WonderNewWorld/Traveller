@@ -114,9 +114,8 @@
         cell = [nibTableCells objectAtIndex:0];
     }
     // 设置数据
-    BusinessModel *temp = self.arrBusiness[indexPath.row];
+    //BusinessModel *temp = self.arrBusiness[indexPath.row];
     
-    [cell setCellWithBusinessModel:temp];
     
     return cell;
 }
