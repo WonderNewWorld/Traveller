@@ -112,10 +112,11 @@
         //cell = [[ShopListCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         NSArray *nibTableCells = [[NSBundle mainBundle] loadNibNamed:@"ShopListCell" owner:self options:nil];
         cell = [nibTableCells objectAtIndex:0];
+        // 设置数据
+        BusinessModel *temp = self.arrBusiness[indexPath.row];
+        [cell setCellWithBusinessModel:temp];
     }
-    // 设置数据
-    BusinessModel *temp = self.arrBusiness[indexPath.row];
-    [cell setCellWithBusinessModel:temp];
+    
     
     return cell;
 }

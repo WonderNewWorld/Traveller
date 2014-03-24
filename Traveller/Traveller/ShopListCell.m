@@ -30,6 +30,9 @@
     self.lbAvg_price.text = [NSString stringWithFormat:@"人均：%d元",model.avg_price];
     self.lbAddress.text = model.address;
     self.lbDistence.text = [NSString stringWithFormat:@"距离：%dm",model.distance];
-    
+    NSURL *urlPhoto = [NSURL URLWithString:model.photo_url];
+    NSURL *urlRate = [NSURL URLWithString:model.rating_img_url];
+    self.imgPhoto.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:urlPhoto]];
+    self.imgRate.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:urlRate]];
 }
 @end
