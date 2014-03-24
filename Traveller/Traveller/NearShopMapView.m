@@ -22,10 +22,10 @@
         self.mapView.userTrackingMode = 1;
         [self addSubview:self.mapView];
         MAUserLocation *userLoc = self.mapView.userLocation;
-        CLLocationCoordinate2D coordinate = [userLoc.location coordinate];
+        
         //search
         self.mapSearch.delegate = self;
-        [self searchReGeocodeWithCoordinate:coordinate];
+        
         //btn 当前位置
         self.btnCurLocation = [[UIButton alloc] initWithFrame:CGRectMake(self.bounds.size.width-40, self.bounds.size.height-60, 30, 30)];
         self.btnCurLocation.backgroundColor = [UIColor redColor];
@@ -51,7 +51,33 @@
     
     [self.mapSearch AMapReGoecodeSearch:regeo];
 }
-#pragma mark - AMapSearchDelegate
+#pragma mark - MAMapViewDelegate methods
+- (void)mapViewWillStartLocatingUser:(MAMapView *)mapView{
+    NSLog(@"start locating user");
+}
+
+/*!
+ @brief 在地图View停止定位后，会调用此函数*/
+- (void)mapViewDidStopLocatingUser:(MAMapView *)mapView{
+    NSLog(@"stop locating user");
+}
+
+
+/*!
+ @brief 位置或者设备方向更新后，会调用此函数*/
+- (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation{
+    NSLog(@"update locating user");
+    CLLocationCoordinate2D coordinate = [userLocation coordinate];
+    NSLog(@"user location:\nlongitude:%f latitude:%f",coordinate.longitude,coordinate.latitude);
+}
+
+/*
+ @brief 定位失败后，会调用此函数*/
+- (void)mapView:(MAMapView *)mapView didFailToLocateUserWithError:(NSError *)error{
+    NSLog(@"locate user erroer:%@",error);
+}
+
+#pragma mark - AMapSearchDelegate methods
 
 /* 逆地理编码回调. */
 - (void)onReGeocodeSearchDone:(AMapReGeocodeSearchRequest *)request response:(AMapReGeocodeSearchResponse *)response
