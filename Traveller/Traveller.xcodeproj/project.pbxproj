@@ -364,8 +364,6 @@
 				1087154418E020920019FD36 /* MaintableCell.m */,
 				1087154518E020920019FD36 /* MainViewController.h */,
 				1087154618E020920019FD36 /* MainViewController.m */,
-				1087156218E020B10019FD36 /* junketing.xml */,
-				1087156318E020B10019FD36 /* user.json */,
 				1087154718E020920019FD36 /* weatherjson.h */,
 				1087154818E020920019FD36 /* weatherjson.m */,
 				1087154918E020920019FD36 /* 北京.jpg */,
@@ -494,6 +492,8 @@
 		10FD4A5B18D9333600FBD4B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1087156218E020B10019FD36 /* junketing.xml */,
+				1087156318E020B10019FD36 /* user.json */,
 				10FD4A5C18D9333600FBD4B4 /* Traveller-Info.plist */,
 				10FD4A5D18D9333600FBD4B4 /* InfoPlist.strings */,
 				10FD4A6018D9333600FBD4B4 /* main.m */,
@@ -544,8 +544,6 @@
 				1087155F18E0209F0019FD36 /* weatherModel.h */,
 				1087156018E0209F0019FD36 /* weatherModel.m */,
 				FE5F740618DD4811009BC476 /* PostsModel */,
-				10F30B2D18DADEEC0031D6F7 /* BusinessModel.h */,
-				10F30B2E18DADEED0031D6F7 /* BusinessModel.m */,
 				10F30B3018DAE23E0031D6F7 /* BusinessDealModel.h */,
 				10F30B3118DAE23E0031D6F7 /* BusinessDealModel.m */,
 				FEF78B0B18DC770600998C06 /* UserModel.h */,
@@ -557,6 +555,8 @@
 		FE5F740618DD4811009BC476 /* PostsModel */ = {
 			isa = PBXGroup;
 			children = (
+				10F30B2D18DADEEC0031D6F7 /* BusinessModel.h */,
+				10F30B2E18DADEED0031D6F7 /* BusinessModel.m */,
 				FEF78B0E18DC77E400998C06 /* PostsModel.h */,
 				FEF78B0F18DC77E400998C06 /* PostsModel.m */,
 				FE5F740718DD4866009BC476 /* PostsActivityModel.h */,

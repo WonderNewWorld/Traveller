@@ -40,9 +40,8 @@
     [_Viewarr addObject:self.hot_post_view];
     [_Viewarr addObject:self.Function_view];
 
-    NSString *str= [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"user" ofType:@"json"] encoding:NSUTF8StringEncoding error:nil];
-    NSDictionary *dic = [str JSONValue];
-    self.table=[[UITableView alloc] initWithFrame:CGRectMake(0, 30, self.view.frame.size.width, self.view.frame.size.height)];
+
+    self.table=[[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     [self.table setDelegate:self];
     [self.table setDataSource:self];
     [self.view addSubview:self.table];
@@ -77,8 +76,8 @@
     UIView *view=[_Viewarr objectAtIndex:indexPath.section];
     return view.frame.size.height;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 15;
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 10;
 }
 //天气预报
 -(void)readyweather{

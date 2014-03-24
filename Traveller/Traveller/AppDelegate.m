@@ -19,7 +19,8 @@
     
     //首页推荐
     MainViewController *main=[[MainViewController alloc] init];
-    [self.tab addChildViewController:main];
+        UINavigationController *nav_main = [[UINavigationController alloc]initWithRootViewController:main];
+    [self.tab addChildViewController:nav_main];
     //附近
     NearShopVC *near = [[NearShopVC alloc] init];
     [self.tab addChildViewController:near];
