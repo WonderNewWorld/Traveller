@@ -40,7 +40,8 @@
     [_Viewarr addObject:self.hot_post_view];
     [_Viewarr addObject:self.Function_view];
 
-    
+    NSString *str= [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"user" ofType:@"json"] encoding:NSUTF8StringEncoding error:nil];
+    NSDictionary *dic = [str JSONValue];
     self.table=[[UITableView alloc] initWithFrame:CGRectMake(0, 30, self.view.frame.size.width, self.view.frame.size.height)];
     [self.table setDelegate:self];
     [self.table setDataSource:self];
@@ -139,12 +140,13 @@
     
     //设置商城lbl
     UILabel *col_hotspot_lbl=[[UILabel alloc]initWithFrame:CGRectMake(25, 0, 130, 20)];
-    col_hotspot_lbl.text=@"商铺收藏";
+    col_hotspot_lbl.text=@"热贴收藏";
     col_hotspot_lbl.font=[UIFont systemFontOfSize:10];
     col_hotspot_lbl.textColor=[UIColor blueColor];
     [col_hotspot_Button addSubview:col_hotspot_lbl];
-    col_hotspot_Button.backgroundColor=[UIColor redColor];
     [self.Function_view addSubview:col_hotspot_Button];
+    //设置
+//    UILabel *col_ho
     
 }
 //获得天气信息

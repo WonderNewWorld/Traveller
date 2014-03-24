@@ -1,0 +1,45 @@
+{"errorNum":10000,"errorMsg":"success","data":
+    [{
+     "User_id": 1,
+     "User_nickname": "骑着骆驼看蜗牛",
+     "User_headphoto": 123,
+     "User_activity_list":
+     [{"Posts_id":1,
+      "Posts_type":0,
+      "Posts_title":"相约磁器口",
+      "Posts_content":"我们一起来看国鸡章",
+      "Posts_location":"重庆"},
+      {"Posts_id":2,
+      "Posts_type":0,
+      "Posts_title":"大学城自行车一日游",
+      "Posts_content":"游遍大学城不是梦",
+      "Posts_location":"重庆"}]
+     },
+     
+     {
+     "User_id": 2,
+     "User_nickname": "我是巫皮龙",
+     "User_headphoto": 123,
+     "User_activity_list":
+     [{"Posts_id":2,
+      "Posts_type":0,
+      "Posts_title":"大学城自行车一日游",
+      "Posts_content":"游遍大学城不是梦",
+      "Posts_location":"重庆"}]
+     },
+     
+     
+     {
+     "User_id": 2,
+     "User_nickname": "我是巫皮龙",
+     "User_headphoto": 123,
+     "User_activity_list":
+     [{"Posts_id":3,
+      "Posts_type":0,
+      "Posts_title":"大学城自行车一日游",
+      "Posts_content":"游遍大学城不是梦",
+      "Posts_location":"重庆"}]
+     }
+     ]}
+
+
