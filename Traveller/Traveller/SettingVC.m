@@ -7,7 +7,7 @@
 //
 
 #import "SettingVC.h"
-
+#import "LoginViewController.h"
 @interface SettingVC ()
 
 @end
@@ -22,14 +22,17 @@
     }
     return self;
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+	[self.navigationController setNavigationBarHidden:YES animated:YES];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.AccountLbl.text=@"123";
+	self.AccountLbl.text=@"   我的帐户";
     self.AccountLbl.userInteractionEnabled=YES;
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onClickUILable)];
     [self.AccountLbl addGestureRecognizer:tapGesture];
+	[self.navigationController setNavigationBarHidden:YES animated:NO];
     
 }
 
@@ -40,6 +43,8 @@
 }
 -(void)onClickUILable{
 
-    NSLog(@"123");
+    LoginViewController *loginVC=[[LoginViewController alloc]init];
+	loginVC.hidesBottomBarWhenPushed=YES;
+	[self.navigationController pushViewController:loginVC animated:NO];
 }
 @end

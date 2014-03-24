@@ -29,12 +29,13 @@
     [self.tab addChildViewController:nav_Posts];
     //设置
     SettingVC *setting = [[SettingVC alloc] init];
-    [self.tab addChildViewController:setting];
+	UINavigationController *setNav = [[UINavigationController alloc]initWithRootViewController:setting];
+    [self.tab addChildViewController:setNav];
     //tab按钮
     main.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"推荐" image:nil selectedImage:nil];
     near.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"附近" image:nil selectedImage:nil];
     nav_Posts.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"帖子" image:nil selectedImage:nil];
-    setting.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"设置" image:nil selectedImage:nil];
+    setNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"设置" image:nil selectedImage:nil];
     
     self.window.rootViewController = self.tab;
     self.window.backgroundColor = [UIColor whiteColor];

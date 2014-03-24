@@ -11,11 +11,15 @@
 		10186BF318DBDD2A00D906A0 /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10186BF218DBDD2A00D906A0 /* PostsViewController.m */; };
 		10186BF818DC16CC00D906A0 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10186BF718DC16CC00D906A0 /* iCarousel.m */; };
 		10186BFC18DC173300D906A0 /* SelectVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 10186BFB18DC173300D906A0 /* SelectVc.m */; };
-		101C5E2618DFD5EC00ADEE13 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AED18DAAB390031D6F7 /* MAMapKit.framework */; };
 		101DA76618D96779007A33DA /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 101DA76518D96779007A33DA /* SettingVC.m */; };
 		101DA76B18D97707007A33DA /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 101DA76A18D97707007A33DA /* SettingVC.xib */; };
 		10581ADA18DA8EC3001A05E6 /* NearShopMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10581AD918DA8EC3001A05E6 /* NearShopMapView.m */; };
 		10581ADD18DA8ED4001A05E6 /* NearShopListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10581ADC18DA8ED4001A05E6 /* NearShopListView.m */; };
+		1070E86B18E0083300AE9B6B /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AED18DAAB390031D6F7 /* MAMapKit.framework */; };
+		1070E86F18E00A3D00AE9B6B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1070E86D18E00A3D00AE9B6B /* LoginViewController.m */; };
+		1070E87018E00A3D00AE9B6B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1070E86E18E00A3D00AE9B6B /* LoginViewController.xib */; };
+		1070E87218E013DE00AE9B6B /* contenttoolbar_hd_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 1070E87118E013DE00AE9B6B /* contenttoolbar_hd_back.png */; };
+		1070E87418E0159600AE9B6B /* reg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1070E87318E0159600AE9B6B /* reg.png */; };
 		1087029418DFD84D00A0D086 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1087028A18DFD84D00A0D086 /* MJRefresh.bundle */; };
 		1087029518DFD84D00A0D086 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1087028D18DFD84D00A0D086 /* MJRefreshBaseView.m */; };
 		1087029618DFD84D00A0D086 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1087028F18DFD84D00A0D086 /* MJRefreshConst.m */; };
@@ -108,6 +112,11 @@
 		10581AD918DA8EC3001A05E6 /* NearShopMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearShopMapView.m; sourceTree = "<group>"; };
 		10581ADB18DA8ED4001A05E6 /* NearShopListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearShopListView.h; sourceTree = "<group>"; };
 		10581ADC18DA8ED4001A05E6 /* NearShopListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearShopListView.m; sourceTree = "<group>"; };
+		1070E86C18E00A3D00AE9B6B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		1070E86D18E00A3D00AE9B6B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		1070E86E18E00A3D00AE9B6B /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		1070E87118E013DE00AE9B6B /* contenttoolbar_hd_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contenttoolbar_hd_back.png; sourceTree = "<group>"; };
+		1070E87318E0159600AE9B6B /* reg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reg.png; sourceTree = "<group>"; };
 		1087028A18DFD84D00A0D086 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
 		1087028B18DFD84D00A0D086 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
 		1087028C18DFD84D00A0D086 /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
@@ -213,7 +222,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				101C5E2618DFD5EC00ADEE13 /* MAMapKit.framework in Frameworks */,
+				1070E86B18E0083300AE9B6B /* MAMapKit.framework in Frameworks */,
 				10F30AEC18DAA86E0031D6F7 /* OpenGLES.framework in Frameworks */,
 				10FD4AE418D9764C00FBD4B4 /* Security.framework in Frameworks */,
 				10FD4AE218D9764700FBD4B4 /* libstdc++.6.0.9.dylib in Frameworks */,
@@ -273,9 +282,14 @@
 		101DA76718D9677D007A33DA /* SettingViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1070E87318E0159600AE9B6B /* reg.png */,
+				1070E87118E013DE00AE9B6B /* contenttoolbar_hd_back.png */,
 				101DA76418D96779007A33DA /* SettingVC.h */,
 				101DA76518D96779007A33DA /* SettingVC.m */,
 				101DA76A18D97707007A33DA /* SettingVC.xib */,
+				1070E86C18E00A3D00AE9B6B /* LoginViewController.h */,
+				1070E86D18E00A3D00AE9B6B /* LoginViewController.m */,
+				1070E86E18E00A3D00AE9B6B /* LoginViewController.xib */,
 			);
 			name = SettingViewControllers;
 			sourceTree = "<group>";
@@ -592,7 +606,9 @@
 			files = (
 				FE5F740518DD3657009BC476 /* Posts_activity_data.plist in Resources */,
 				FE5F741A18DD77AA009BC476 /* images-3.jpeg in Resources */,
+				1070E87218E013DE00AE9B6B /* contenttoolbar_hd_back.png in Resources */,
 				FE5F741F18DD77AA009BC476 /* images-8.jpeg in Resources */,
+				1070E87018E00A3D00AE9B6B /* LoginViewController.xib in Resources */,
 				10F30AF218DAAB480031D6F7 /* AMap.bundle in Resources */,
 				FE5F742018DD77AA009BC476 /* images-9.jpeg in Resources */,
 				FE5F741818DD77AA009BC476 /* images-1.jpeg in Resources */,
@@ -609,6 +625,7 @@
 				FE5F741D18DD77AA009BC476 /* images-6.jpeg in Resources */,
 				1087029E18E00AD100A0D086 /* ShopListCell.xib in Resources */,
 				FE5F741C18DD77AA009BC476 /* images-5.jpeg in Resources */,
+				1070E87418E0159600AE9B6B /* reg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,6 +693,7 @@
 				10F30B1718DAC9330031D6F7 /* SBJsonStreamWriterAccumulator.m in Sources */,
 				10F30B2C18DADA9C0031D6F7 /* DPRequest.m in Sources */,
 				10F30B1618DAC9330031D6F7 /* SBJsonStreamWriter.m in Sources */,
+				1070E86F18E00A3D00AE9B6B /* LoginViewController.m in Sources */,
 				10F30B1818DAC9330031D6F7 /* SBJsonStreamWriterState.m in Sources */,
 				10F30B1218DAC9330031D6F7 /* SBJsonStreamParser.m in Sources */,
 				10F30B1418DAC9330031D6F7 /* SBJsonStreamParserAdapter.m in Sources */,
@@ -809,6 +827,7 @@
 					/Users/ty/Desktop/Traveller/Traveller,
 					/Users/chenwei/Desktop/Traveller/Traveller,
 					"/Users/Ronaldinho/Desktop/汉昌项目/Traveller/Traveller",
+					/Users/ty/Traveller/Traveller,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Traveller/Traveller-Prefix.pch";
@@ -831,6 +850,7 @@
 					/Users/ty/Desktop/Traveller/Traveller,
 					/Users/chenwei/Desktop/Traveller/Traveller,
 					"/Users/Ronaldinho/Desktop/汉昌项目/Traveller/Traveller",
+					/Users/ty/Traveller/Traveller,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Traveller/Traveller-Prefix.pch";

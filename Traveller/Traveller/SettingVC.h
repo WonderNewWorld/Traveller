@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingVC : UIViewController
+@interface SettingVC : UIViewController<UINavigationBarDelegate,UINavigationControllerDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *AccountLbl;
 @property (strong, nonatomic) IBOutlet UILabel *ShareLbl;
 @property (strong, nonatomic) IBOutlet UILabel *FeedbackLbl;
