@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PostsViewController : UIViewController
+@property(nonatomic,strong) NSMutableArray *Posts_data;
+@property(nonatomic,strong) UITableView *Posts_tableview;
 
 @end

@@ -1,7 +1,7 @@
 //
 //  SelectVc.m
 //  Traveller
-//  活动贴/经验贴发帖选择视图
+//  
 //  Created by TY on 14-3-21.
 //  Copyright (c) 2014年 NewWorld. All rights reserved.
 //
@@ -30,10 +30,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    UIColor *color = [UIColor colorWithRed:135/255 green:205/255 blue:250/255 alpha:0.8];
+    self.title = @"帖子类型";
     _icarousel = [[iCarousel alloc]init];
     [_icarousel setFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
-    [_icarousel setBackgroundColor:color];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+    [_icarousel setBackgroundColor:[UIColor grayColor]];
     _icarousel.type = iCarouselTypeCoverFlow;
     [_icarousel setDelegate:self];
     [_icarousel setDataSource:self];
@@ -46,6 +47,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark - iCarousel数据源
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
 {
     //generate 100 buttons
@@ -79,8 +81,7 @@
 	return button;
 }
 
-#pragma mark -
-#pragma mark Button tap event
+#pragma mark - Button tap event
 
 - (void)buttonTapped:(UIButton *)sender
 {
@@ -89,5 +90,7 @@
         [self.navigationController pushViewController:_post_activityVC animated:YES];
     }
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    self.tabBarController.tabBar.hidden = YES;
+}
 @end
