@@ -16,4 +16,5 @@
 
 @property (strong,nonatomic)UIButton *btnCurLocation;
 @property (strong,nonatomic)UISegmentedControl *segMapType;
+
 @end
