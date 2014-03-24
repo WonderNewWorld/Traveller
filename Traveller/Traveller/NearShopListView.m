@@ -29,7 +29,7 @@
         self.arrBusiness = [[NSMutableArray alloc] init];
         
         //MJ刷新
-        [self.listView registerClass:[ShopListCell class] forCellReuseIdentifier:@"ShopListCell"];
+        //[self.listView registerClass:[ShopListCell class] forCellReuseIdentifier:@"ShopCell"];
         self.header = [MJRefreshHeaderView header];
         self.header.scrollView = self.listView;
         self.header.delegate = self;
@@ -106,7 +106,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"ShopListCell";
+    static NSString *CellIdentifier = @"ShopCell";
     ShopListCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         //cell = [[ShopListCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
@@ -114,13 +114,15 @@
         cell = [nibTableCells objectAtIndex:0];
     }
     // 设置数据
-    //BusinessModel *temp = self.arrBusiness[indexPath.row];
-    
+    BusinessModel *temp = self.arrBusiness[indexPath.row];
+    [cell setCellWithBusinessModel:temp];
     
     return cell;
 }
 
 
 #pragma mark -UITableViewDelegate Methods
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 100;
+}
 @end

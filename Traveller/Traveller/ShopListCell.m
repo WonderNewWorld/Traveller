@@ -29,7 +29,7 @@
     self.lbName.text = model.name;
     self.lbAvg_price.text = [NSString stringWithFormat:@"人均：%d元",model.avg_price];
     self.lbAddress.text = model.address;
-    self.lbDistence.text = [NSString stringWithFormat:@"人均：%d元",model.distance];
+    self.lbDistence.text = [NSString stringWithFormat:@"距离：%dm",model.distance];
     
 }
 @end
