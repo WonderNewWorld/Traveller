@@ -13,6 +13,7 @@
 @synthesize User_nickname;
 @synthesize User_headphoto;
 @synthesize User_activity_list;
+@synthesize USER_Location;
 static UserModel *userModel_one;
 +(id)sharedUserModel{
     if (!userModel_one) {
