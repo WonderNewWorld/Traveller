@@ -11,6 +11,7 @@
 		10186BF318DBDD2A00D906A0 /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10186BF218DBDD2A00D906A0 /* PostsViewController.m */; };
 		10186BF818DC16CC00D906A0 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10186BF718DC16CC00D906A0 /* iCarousel.m */; };
 		10186BFC18DC173300D906A0 /* SelectVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 10186BFB18DC173300D906A0 /* SelectVc.m */; };
+		101C5E2618DFD5EC00ADEE13 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AED18DAAB390031D6F7 /* MAMapKit.framework */; };
 		101DA76618D96779007A33DA /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 101DA76518D96779007A33DA /* SettingVC.m */; };
 		101DA76B18D97707007A33DA /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 101DA76A18D97707007A33DA /* SettingVC.xib */; };
 		10581ADA18DA8EC3001A05E6 /* NearShopMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10581AD918DA8EC3001A05E6 /* NearShopMapView.m */; };
@@ -75,7 +76,6 @@
 		FE5F742118DD77AA009BC476 /* images-10.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FE5F741718DD77AA009BC476 /* images-10.jpeg */; };
 		FE5F742318DDF375009BC476 /* Temp_posts_activity_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE5F742218DDF375009BC476 /* Temp_posts_activity_data.plist */; };
 		FEF1426618DE90EF00E2B2C6 /* DetailActivityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF1426518DE90EF00E2B2C6 /* DetailActivityVC.m */; };
-		FEF78B0A18DC752900998C06 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AED18DAAB390031D6F7 /* MAMapKit.framework */; };
 		FEF78B0D18DC770600998C06 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF78B0C18DC770600998C06 /* UserModel.m */; };
 		FEF78B1018DC77E400998C06 /* PostsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF78B0F18DC77E400998C06 /* PostsModel.m */; };
 /* End PBXBuildFile section */
@@ -208,7 +208,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEF78B0A18DC752900998C06 /* MAMapKit.framework in Frameworks */,
+				101C5E2618DFD5EC00ADEE13 /* MAMapKit.framework in Frameworks */,
 				10F30AEC18DAA86E0031D6F7 /* OpenGLES.framework in Frameworks */,
 				10FD4AE418D9764C00FBD4B4 /* Security.framework in Frameworks */,
 				10FD4AE218D9764700FBD4B4 /* libstdc++.6.0.9.dylib in Frameworks */,
