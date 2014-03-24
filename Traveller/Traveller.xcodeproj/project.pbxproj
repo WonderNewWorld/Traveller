@@ -26,6 +26,10 @@
 		10581ADD18DA8ED4001A05E6 /* NearShopListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10581ADC18DA8ED4001A05E6 /* NearShopListView.m */; };
 		10978F3B18DC0AD3006D1915 /* MaintableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10978F3A18DC0AD3006D1915 /* MaintableCell.m */; };
 		10978F3F18DC136B006D1915 /* 重庆.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10978F3E18DC136B006D1915 /* 重庆.jpg */; };
+		109DFC3E18E010D5004EE87B /* 霾.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 109DFC3D18E010D5004EE87B /* 霾.jpg */; };
+		109DFC4018E013D5004EE87B /* File in Resources */ = {isa = PBXBuildFile; fileRef = 109DFC3F18E013D5004EE87B /* File */; };
+		109DFC4218E015BA004EE87B /* 阴转小雨.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 109DFC4118E015BA004EE87B /* 阴转小雨.jpg */; };
+		109DFC4518E01B42004EE87B /* cityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 109DFC4418E01B42004EE87B /* cityViewController.m */; };
 		10F30AEC18DAA86E0031D6F7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AEB18DAA86E0031D6F7 /* OpenGLES.framework */; };
 		10F30AF018DAAB400031D6F7 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F30AEF18DAAB400031D6F7 /* AMapSearchKit.framework */; };
 		10F30AF218DAAB480031D6F7 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 10F30AF118DAAB480031D6F7 /* AMap.bundle */; };
@@ -99,6 +103,11 @@
 		10978F3918DC0AD3006D1915 /* MaintableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaintableCell.h; sourceTree = "<group>"; };
 		10978F3A18DC0AD3006D1915 /* MaintableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaintableCell.m; sourceTree = "<group>"; };
 		10978F3E18DC136B006D1915 /* 重庆.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "重庆.jpg"; sourceTree = "<group>"; };
+		109DFC3D18E010D5004EE87B /* 霾.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "霾.jpg"; sourceTree = "<group>"; };
+		109DFC3F18E013D5004EE87B /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		109DFC4118E015BA004EE87B /* 阴转小雨.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "阴转小雨.jpg"; sourceTree = "<group>"; };
+		109DFC4318E01B42004EE87B /* cityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cityViewController.h; sourceTree = "<group>"; };
+		109DFC4418E01B42004EE87B /* cityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cityViewController.m; sourceTree = "<group>"; };
 		10F30AEB18DAA86E0031D6F7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		10F30AED18DAAB390031D6F7 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		10F30AEF18DAAB400031D6F7 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
@@ -215,11 +224,15 @@
 			children = (
 				1021B6B418DAD9D40041711B /* MainViewController.h */,
 				1021B6B118DAD9D40041711B /* MainViewController.m */,
+				109DFC4318E01B42004EE87B /* cityViewController.h */,
+				109DFC4418E01B42004EE87B /* cityViewController.m */,
 				1012B8A218DC25A900B73E0B /* money.png */,
 				10978F3918DC0AD3006D1915 /* MaintableCell.h */,
 				10978F3A18DC0AD3006D1915 /* MaintableCell.m */,
 				10978F4018DC1372006D1915 /* cityimg */,
 				1021B6B218DAD9D40041711B /* 多云.jpg */,
+				109DFC4118E015BA004EE87B /* 阴转小雨.jpg */,
+				109DFC3D18E010D5004EE87B /* 霾.jpg */,
 				1021B6B918DAD9DC0041711B /* 小雨.jpg */,
 				1021B6BE18DADF2A0041711B /* 收藏.png */,
 				1021B6B518DAD9D40041711B /* weatherjson.h */,
@@ -332,6 +345,7 @@
 				10FD4A5D18D9333600FBD4B4 /* InfoPlist.strings */,
 				1024484718DBCB7400E25D3E /* junketing.xml */,
 				1024484918DBCF1E00E25D3E /* user.json */,
+				109DFC3F18E013D5004EE87B /* File */,
 				10FD4A6018D9333600FBD4B4 /* main.m */,
 				10FD4A6218D9333600FBD4B4 /* Traveller-Prefix.pch */,
 			);
@@ -457,10 +471,13 @@
 				10224B6D18DC1AA100A1D159 /* 济南.jpg in Resources */,
 				10978F3F18DC136B006D1915 /* 重庆.jpg in Resources */,
 				10224B6918DC195B00A1D159 /* 北京.jpg in Resources */,
+				109DFC3E18E010D5004EE87B /* 霾.jpg in Resources */,
+				109DFC4018E013D5004EE87B /* File in Resources */,
 				1021B6B718DAD9D40041711B /* 多云.jpg in Resources */,
 				10F30AF218DAAB480031D6F7 /* AMap.bundle in Resources */,
 				10FD4A5F18D9333600FBD4B4 /* InfoPlist.strings in Resources */,
 				1024484818DBCB7400E25D3E /* junketing.xml in Resources */,
+				109DFC4218E015BA004EE87B /* 阴转小雨.jpg in Resources */,
 				1021B6BF18DADF2A0041711B /* 收藏.png in Resources */,
 				1012B8A318DC25A900B73E0B /* money.png in Resources */,
 				1024484A18DBCF1E00E25D3E /* user.json in Resources */,
@@ -513,6 +530,7 @@
 				10581ADD18DA8ED4001A05E6 /* NearShopListView.m in Sources */,
 				10F30B1B18DAC9330031D6F7 /* SBJsonWriter.m in Sources */,
 				10F30B1318DAC9330031D6F7 /* SBJsonStreamParserAccumulator.m in Sources */,
+				109DFC4518E01B42004EE87B /* cityViewController.m in Sources */,
 				10978F3B18DC0AD3006D1915 /* MaintableCell.m in Sources */,
 				10F30B1118DAC9330031D6F7 /* SBJsonParser.m in Sources */,
 				10F30B1018DAC9330031D6F7 /* NSObject+SBJson.m in Sources */,

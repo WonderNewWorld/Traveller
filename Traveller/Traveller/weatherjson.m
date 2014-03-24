@@ -15,11 +15,11 @@
     NSMutableDictionary *dicWeather=[dicjson objectForKey:@"weatherinfo"];
     weatherModel *model=[[weatherModel alloc] init];
     model.city=[dicWeather objectForKey:@"city"];
-    model.city_en=[dicWeather objectForKey:@"city_en"];
-    model.date_y=[dicWeather objectForKey:@"date_y"];
+    model.city_en=[dicWeather objectForKey:@"cityid"];
+    model.date_y=[dicWeather objectForKey:@"ptime"];
     model.week=[dicWeather objectForKey:@"week"];
     model.temp=[dicWeather objectForKey:@"temp1"];
-    model.weather=[dicWeather objectForKey:@"weather1"];
+    model.weather=[dicWeather objectForKey:@"weather"];
     NSLog(@"%@",model.city);
     return model;
 }

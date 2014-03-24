@@ -3,6 +3,8 @@
      "User_id": 1,
      "User_nickname": "骑着骆驼看蜗牛",
      "User_headphoto": 123,
+     "latitude":20,
+     "longitude":20,
      "User_activity_list":
      [{"Posts_id":1,
       "Posts_type":0,
@@ -20,6 +22,8 @@
      "User_id": 2,
      "User_nickname": "我是巫皮龙",
      "User_headphoto": 123,
+     "latitude":20,
+     "longitude":20,
      "User_activity_list":
      [{"Posts_id":2,
       "Posts_type":0,
@@ -31,6 +35,8 @@
      "User_id": 3,
      "User_nickname": "菊花开在黎明深处",
      "User_headphoto": 123,
+     "latitude":20,
+     "longitude":20,
      "User_activity_list":
      [{"Posts_id":2,
       "Posts_type":0,
@@ -42,6 +48,8 @@
      "User_id": 4,
      "User_nickname": "丕龙大将军",
      "User_headphoto": 255,
+     "latitude":20,
+     "longitude":20,
      "User_activity_list":
      [{"Posts_id":2,
       "Posts_type":0,
@@ -53,6 +61,8 @@
      "User_id": 5,
      "User_nickname": "走",
      "User_headphoto": 123,
+     "latitude":20,
+     "longitude":20,
      "User_activity_list":
      [{"Posts_id":2,
       "Posts_type":0,
@@ -64,6 +74,8 @@
      "User_id": 6,
      "User_nickname": "草泥马",
      "User_headphoto": 123,
+     "latitude":20,
+     "longitude":20,
      "User_activity_list":
      [{"Posts_id":2,
       "Posts_type":0,
@@ -75,6 +87,8 @@
      "User_id": 7,
      "User_nickname": "陈浮生",
      "User_headphoto": 123,
+     "latitude":20,
+     "longitude":20,
      "User_activity_list":
      [{"Posts_id":2,
       "Posts_type":0,
@@ -86,6 +100,8 @@
      "User_id": 8,
      "User_nickname": "谢文东",
      "User_headphoto": 123,
+     "latitude":20,
+     "longitude":20,
      "User_activity_list":
      [{"Posts_id":2,
       "Posts_type":0,
@@ -97,6 +113,8 @@
      "User_id": 9,
      "User_nickname": "图样图森破",
      "User_headphoto": 123,
+     "latitude":20,
+     "longitude":20,
      "User_activity_list":
      [{"Posts_id":2,
       "Posts_type":0,
@@ -109,6 +127,8 @@
      "User_id": 10,
      "User_nickname": "暗影游侠",
      "User_headphoto": 123,
+     "latitude":20,
+     "longitude":20,
      "User_activity_list":
      [{"Posts_id":2,
       "Posts_type":0,

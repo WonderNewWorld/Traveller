@@ -95,11 +95,6 @@
 -(void)readyhotspot{
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"junketing" ofType:@"xml"];
     _dicCityInfo = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
-    
- 
-    
-    
-    
     self.hot_Spot_view=[[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 120)];
     self.hot_spot_scrollView=[[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.hot_Spot_view.frame.size.width, self.hot_Spot_view.frame.size.height)];
     [self settingreadyhotspot];
@@ -112,10 +107,25 @@
         UIButton *btn=[[UIButton alloc] initWithFrame:CGRectMake(10+80*i, 20, 60, 80)];
         btn.backgroundColor=[UIColor yellowColor];
         [btn setBackgroundImage:[UIImage imageNamed:[[cityArr objectAtIndex:i] stringByAppendingString:@".jpg"]] forState:UIControlStateNormal];
+        btn.tag=10000+i;
+        [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
         [self.hot_spot_scrollView addSubview:btn];
     }
     [self.hot_spot_scrollView setContentSize:CGSizeMake(20+80*[cityArr count], 0)];
     [self.hot_Spot_view addSubview:self.hot_spot_scrollView];
+}
+-(void)btnAction:(UIButton*)sender{
+    NSLog(@"%d",sender.tag);
+    NSArray *cityArr=[_dicCityInfo allKeys];
+    NSString *strcity=[cityArr objectAtIndex:sender.tag-10000];
+    NSDictionary *dicValue=[_dicCityInfo objectForKey:strcity];
+    NSString *str=[dicValue objectForKey:@"condent"];
+    NSLog(@"%@",str);
+    
+    cityViewController *cityVC=[[cityViewController alloc] init];
+    [self.navigationController pushViewController:cityVC animated:YES];
+    
+
 }
 //热门经验帖
 -(void)readhotpost{
@@ -133,6 +143,7 @@
 -(void)colloctInfo{
     //设置商城按钮
     UIButton *col_hotspot_Button=[[UIButton  alloc] initWithFrame:CGRectMake(10, 20, 150, 30)];
+    [col_hotspot_Button addTarget:self action:@selector(col_hotspot_ButtonAction) forControlEvents:UIControlEventTouchUpInside];
     //        [storeButton addTarget:self action:@selector(resigion) forControlEvents:UIControlEventTouchUpInside];
     UIImageView *col_hotspot_img=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 20, 18)];
     [col_hotspot_img setImage:[UIImage imageNamed:@"money"]];
@@ -140,19 +151,32 @@
     
     //设置商城lbl
     UILabel *col_hotspot_lbl=[[UILabel alloc]initWithFrame:CGRectMake(25, 0, 130, 20)];
-    col_hotspot_lbl.text=@"热贴收藏";
+    col_hotspot_lbl.text=@"地点收藏";
     col_hotspot_lbl.font=[UIFont systemFontOfSize:10];
     col_hotspot_lbl.textColor=[UIColor blueColor];
     [col_hotspot_Button addSubview:col_hotspot_lbl];
     [self.Function_view addSubview:col_hotspot_Button];
+    
     //设置
-//    UILabel *col_ho
+    UIButton *col_hotpost_Button=[[UIButton alloc] initWithFrame:CGRectMake(10, 50, 130, 30)];
+    UIImageView *col_hotpost_img=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 20, 18)];
+    [col_hotpost_img setImage:[UIImage imageNamed:@"money"]];
+    [col_hotpost_Button addSubview:col_hotpost_img];
+    
+    //设置商城lbl
+    UILabel *col_hotpost_lbl=[[UILabel alloc]initWithFrame:CGRectMake(25, 0, 130, 20)];
+    col_hotpost_lbl.text=@"热贴收藏";
+    col_hotpost_lbl.font=[UIFont systemFontOfSize:10];
+    col_hotpost_lbl.textColor=[UIColor blueColor];
+    [col_hotpost_Button addSubview:col_hotpost_lbl];
+    col_hotpost_Button.tintColor=[UIColor blueColor];
+    [self.Function_view addSubview:col_hotpost_Button];
     
 }
 //获得天气信息
 -(void)getweathInfo{
     NSString *city=[NSString stringWithFormat:@"%d",[weatherjson cityChangCityID:@"重庆"] ];
-    NSURL *url=[NSURL URLWithString:[NSString stringWithFormat:@"http://m.weather.com.cn/data/%@.html",city]];
+    NSURL *url=[NSURL URLWithString:[NSString stringWithFormat:@"http://www.weather.com.cn/data/cityinfo/%@.html",city]];
         NSError *error=nil;
     NSString *strContents=[NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:&error];
     self.weather_model=[weatherjson newWeatherWithString:strContents];
@@ -176,7 +200,9 @@
     [self.weather_view addSubview:templbl];
     [self.weather_view addSubview:citylbl];
 }
-
+-(void)col_hotspot_ButtonAction{
+    NSLog(@"yes");
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

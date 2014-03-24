@@ -10,6 +10,7 @@
 #import "SBJson.h"
 #import "weatherjson.h"
 #import "weatherModel.h"
+#import "cityViewController.h"
 #import "MaintableCell.h"
 @interface MainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
     NSMutableArray *_Viewarr;
