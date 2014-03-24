@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MAMapKit/MAMapKit.h>
 
 @interface UserModel : NSObject
 //用户ID
@@ -17,5 +18,8 @@
 @property(nonatomic,strong)NSString *User_headphoto;
 //用户参与的活动
 @property(nonatomic,strong)NSMutableArray *User_activity_list;
+//用户位置
+@property(nonatomic,assign)CLLocationCoordinate2D USER_Location;
+
 +(id)sharedUserModel;
 @end
