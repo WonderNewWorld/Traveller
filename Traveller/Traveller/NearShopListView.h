@@ -10,6 +10,7 @@
 #import "SBJson.h"
 #import "DPRequest.h"
 #import "MJRefresh.h"
+#import "ShopListCell.h"
 
 
 @interface NearShopListView : UIView<UITableViewDelegate,UITableViewDataSource,MJRefreshBaseViewDelegate>
