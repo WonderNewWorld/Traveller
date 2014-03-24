@@ -28,7 +28,15 @@
         
         self.arrBusiness = [[NSMutableArray alloc] init];
         [self.arrBusiness addObjectsFromArray:[DPRequest getBusinessListByCity:@"重庆" andCategory:@"美食" andRadius:1000 andSort:7 andPage:1]];
+        //MJ刷新
+        [self.listView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ShopListCell"];
+        self.header = [MJRefreshHeaderView header];
+        self.header.scrollView = self.listView;
+        self.header.delegate = self;
         
+        self.footer = [MJRefreshFooterView footer];
+        self.footer.scrollView = self.listView;
+        self.footer.delegate = self;
     }
     return self;
 }
@@ -39,7 +47,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"ShopListCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
