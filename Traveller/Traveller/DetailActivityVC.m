@@ -9,7 +9,10 @@
 #import "DetailActivityVC.h"
 #import "PostsActivityModel.h"
 #import "UserModel.h"
-@interface DetailActivityVC ()
+#import "CMPopTipView.h"
+@interface DetailActivityVC ()<CMPopTipViewDelegate>{
+    CMPopTipView *popview;
+}
 
 @end
 
@@ -87,6 +90,7 @@
     self.doneBtn.titleLabel.font = [UIFont systemFontOfSize:15.0f];
     self.doneBtn.titleLabel.textColor = [UIColor grayColor];
     self.textviewForDetail.text = posts_activity_model.Posts_content;
+    self.textviewForDetail.editable = NO;
     self.textviewForDetail.font = [UIFont italicSystemFontOfSize:15.0f];
     [self animateOnEntry];
  
@@ -94,7 +98,7 @@
 //动态进入逻辑
 - (void)animateOnEntry
 {
-    //set initial frames
+    //初始化控件位置
     self.backgroundImageView.alpha = 0;
     self.backgroundImageView.frame = CGRectMake(0, self.yOrigin + MAIN_LABEL_Y_ORIGIN, self.view.frame.size.width, self.labelForTitle.frame.size.height + self.labelForLocation.frame.size.height);
     self.labelForTitle.frame = CGRectMake(70, self.yOrigin + MAIN_LABEL_Y_ORIGIN, self.labelForTitle.frame.size.width, self.labelForTitle.frame.size.height);
@@ -105,7 +109,7 @@
     [self.labelForNickname setFrame:CGRectMake(258, self.labelForTitle.frame.origin.y, 58, 30)];
     self.textviewForDetail.alpha = 0;
     self.textviewForDetail.frame = CGRectMake(self.textviewForDetail.frame.origin.x, self.textviewForDetail.frame.size.height + self.view.frame.size.height, self.textviewForDetail.frame.size.width, self.textviewForDetail.frame.size.height);
-    //apply animation on ENTERING INTO THE VIEW
+    //应用动画进入界面
     [UIView animateWithDuration:0.4f
                           delay:0
                         options:UIViewAnimationOptionCurveEaseInOut
@@ -124,6 +128,13 @@
          self.textviewForDetail.frame = CGRectMake(self.textviewForDetail.frame.origin.x, self.view.frame.size.height - self.textviewForDetail.frame.size.height, self.textviewForDetail.frame.size.width, self.textviewForDetail.frame.size.height);
          self.textviewForDetail.alpha = 1;
          NSLog(@"width %f height %f",self.User_headPhoto.frame.size.width,self.User_headPhoto.frame.size.height);
+         if (!isJoin) {
+             popview = [[CMPopTipView alloc]initWithMessage:@"点击加入吧"];
+             [popview presentPointingAtView:self.btnForJoin inView:self.view animated:YES];
+             [popview setDelegate:self];
+             popview.backgroundColor = [UIColor darkGrayColor];
+             popview.textColor = [UIColor whiteColor];
+         }
      }
                      completion:NULL];
 
@@ -176,4 +187,9 @@
 -(void)viewDidAppear:(BOOL)animated{
     self.navigationController.navigationBarHidden = YES;
 }
+//cmpopview代理方法
+- (void)popTipViewWasDismissedByUser:(CMPopTipView *)popTipView{
+    popview = nil;
+}
+
 @end
