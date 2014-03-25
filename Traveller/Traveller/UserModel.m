@@ -22,4 +22,24 @@ static UserModel *userModel_one;
     }
     return userModel_one;
 }
+
+
+
+-(void)encodeWithCoder:(NSCoder *)aCoder{
+	NSString *strUser_id=[NSString stringWithFormat:@"%d",User_id];
+    [aCoder encodeObject:strUser_id forKey:@"User_id"];
+    [aCoder encodeObject:User_nickname forKey:@"User_nickname"];
+    [aCoder encodeObject:User_headphoto forKey:@"User_headphoto"];
+    [aCoder encodeObject:User_activity_list forKey:@"User_activity_list"];
+}
+
+
+-(id)initWithCoder:(NSCoder *)aDecoder{
+    NSString *strUser_id=[aDecoder decodeObjectForKey:@"User_id"];
+	User_id=[strUser_id intValue];
+    User_nickname=[aDecoder decodeObjectForKey:@"User_nickname"];
+    User_headphoto=[aDecoder decodeObjectForKey:@"User_headphoto"];
+    User_activity_list=[aDecoder decodeObjectForKey:@"User_activity_list"];
+    return self;
+}
 @end

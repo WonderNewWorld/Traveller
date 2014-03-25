@@ -22,4 +22,6 @@
 @property(nonatomic,assign)CLLocationCoordinate2D USER_Location;
 
 +(id)sharedUserModel;
+
+
 @end
